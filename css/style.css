@@ -1,5 +1,5 @@
 * {
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,12 +33,49 @@ h3 {
     color: #22495e;
 }
 
-body {
-    height: 100%;
+body.others {
+    position: relative;
+
+}
+
+header.otherpages {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background-big-originalfocus.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 0.5em 0 3em 0.25em;
+}
+
+#logo {
+    height: auto; 
+    fill: #fff;
+    margin-left: 2.5%;
+    z-index: 1;
+    position: relative;
+    float: left;
+}
+
+#hamburger {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2.5%;
+}
+
+
+
+/*all versions of homepage*/
+
+body.home {
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*padding: 0.5em 0 3em 0.25em;*/
     /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background-big-originalfocus.jpg');
     /*width: 100%;*/
@@ -48,19 +85,38 @@ body {
     /*background-position: 0% 100%;*/
 }
 
-#logo {
-    height: auto; 
-    fill: #fff;
-    margin-left: 25px;
-    z-index: 1;
-    position: relative;
-    float: left;
+#booknow {
+    font-family: "Caveat", cursive;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #22495e;
+    background: #fff;
+
+    border: 1px solid #22495e;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    width: 20%;
+    
+    
+    text-align: center;
+    /*display: flex;
+    padding: 10px 30px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    */
 }
+
 
 /*styling desktop version */
 @media screen and (min-width: 600px){
     h1 {
         font-size: 450%;
+        float: left;
+        padding-left: 15%;
     }
     
     #logo {
@@ -70,12 +126,20 @@ body {
     #fern {
         width: 8%;
         height: auto;
-        float: right; 
+        float: right;
+        /*position: relative;- not sure needed*/
+        margin-right: 2.5%;
+        border: 5px solid white;
+        border-radius: 25px;
     }
 
     header {
          
-        height: 50vh;   
+        height: 40vh;   
+    }
+
+    header.otherpages {
+        height: 40vh;
     }
 
     #navbar {
@@ -92,14 +156,13 @@ body {
 
     .navitems {
         float: left;
-        width: 15%;
+        width: 16.6%;
         box-sizing: border-box;
         padding: 10px;
     }
 
     li a {
         display: inline-block;
-
         color: #ffffff;
         font-family: "Caveat", cursive;
         font-weight: 500;
@@ -119,17 +182,61 @@ body {
 
 
 
-    #navbar label, 
-    #hamburger {
+    #navbar label {
         display: none;
+    }
+
+    #footer-address {
+        float: left;
+        width: 50%;
     }
 }
 
 
 
+
 /*styling mobile version*/
 @media screen and (max-width:600px){
+    header.otherpages {
+        height: 60vh;
+    }
+
+    .navitems {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #000000;
+        /*background-color: #22495e;*/
+        background-color: #383838;
+    }
+
+    li a {
+        color: #ffffff;
+        font-family: "Caveat", cursive;
+        font-weight: 500;
+        font-size: 2rem;
+        text-decoration: none;        
+    }
+
+    #navbar label {
+        color: #ffffff;
+        float: right;
+        padding-top: 5px;
+        padding-right: 10px;
+        font-size: 2rem;
+        font-style: normal;
+    }
+
+    #navmenu {
+        display: none;
+    }
+
+    #navbar input:checked ~ #navmenu {
+        display: block;
+    }
+
     h1 {
+        clear: both;
         font-size: 300%;
     }
 
@@ -140,8 +247,33 @@ body {
     #fern {
         display: none;
     }
+
+    footer {
+        text-align: center;
+    }
 }
 /*styling desktop version homepage*/
 
+@media screen and (min-width: 600px){
+.welcome {
+    clear: both;
+    text-align: center;
 
+}
+
+#booknow {
+    width: 20%;
+}
+
+}
 /*styling mobile version homepage*/
+
+@media screen and (max-width:600px){
+.welcome {
+    display:none;
+}
+
+#booknow {
+    width: 50%;
+}
+}
