@@ -63,6 +63,8 @@ ul {
     text-decoration: none;
 }
 
+
+
 /*all versions of page other than homepage*/
 header.otherpages {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background-big-originalfocus.jpg');
@@ -285,6 +287,7 @@ footer.homepage {
     footer {
         text-align: center;
     }
+
 }
 /*styling desktop version homepage*/
 
@@ -338,10 +341,12 @@ footer.homepage {
         height: auto;
     }
 
+    /*on all desktop pages other than homepage*/
     main.others {
         height: 150vh;
     }
 
+    /*on all desktop pages other than homepage*/
     footer.allothers {
         /*background-color: #6E6E6E;*/
         position: relative;
@@ -364,4 +369,25 @@ footer.homepage {
     }
 }
 
+/*styling desktop version bookings page*/
+@media screen and (min-width: 600px){
+    .form {
+        float: left;
+        width: 30%;
+    }
 
+    .image-restaurant {
+        float: left;
+        width: 50%;
+    }
+}
+
+/*styling mobile version bookings page*/
+@media screen and (max-width:600px){
+    .image-restaurant {
+        display: none;
+    }
+    .form {
+        width: 100%;
+    }
+}
