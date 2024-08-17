@@ -67,7 +67,7 @@ ul {
 
 /*all versions of page other than homepage*/
 header.otherpages {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/background-big-originalfocus.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -103,7 +103,7 @@ body.home {
     background-size: cover;
     /*padding: 0.5em 0 3em 0.25em;*/
     /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/../images/background-big-originalfocus.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
     /*width: 100%;*/
     /*background-color: #ebf2f5;*/
     /*height: 100vh;*/
@@ -356,7 +356,7 @@ footer.homepage {
         background-size: cover;
         /*padding: 0.5em 0 3em 0.25em;*/
         /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/background-big-originalfocus.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
     }
     
 }
