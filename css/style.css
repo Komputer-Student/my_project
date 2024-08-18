@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
     font-size: 1.2rem;
     color: #ffffff;
 }
@@ -11,7 +11,6 @@ h1 {
     font-family: "Caveat", cursive;
     text-shadow: 2px 3px 3px #a3a3a3;
     font-weight: 600;
-    font-style: normal;
     color: #ffffff;
     text-align: center;
     font-display: optional;
