@@ -8,32 +8,35 @@
 }
 
 h1 {
-    font-family: "Caveat", cursive;
-    text-shadow: 2px 3px 3px #a3a3a3;
+    /*font-family: "Caveat", cursive;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*text-shadow: 2px 3px 3px #a3a3a3;*/
+    text-shadow: 2px 3px 3px #383838;
+    
     font-weight: 600;
     color: #ffffff;
+    font-style: italic;
     text-align: center;
-    font-display: optional;
     /*clear: left;*/
 }
 
 h2 {
-    font-family: "Caveat", cursive;
+    /*font-family: "Caveat", cursive;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
     font-size: 2rem;
     font-style: normal;
     color: #ffffff;
     text-align: center;
-    font-display: optional;
 }
 
 h3 {
-    font-family: "Caveat", cursive;
+    /*font-family: "Caveat", cursive;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
     font-style: normal;
     color: #ffffff;
-    font-display: optional;
 }
 
 body.others {
@@ -114,7 +117,8 @@ body.home {
 }
 
 #booknow {
-    font-family: "Caveat", cursive;
+    /*font-family: "Caveat", cursive;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
     font-size: 2rem;
     text-transform: uppercase;
@@ -199,7 +203,8 @@ footer.homepage {
     li a {
         display: inline-block;
         color: #ffffff;
-        font-family: "Caveat", cursive;
+        /*font-family: "Caveat", cursive;*/
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 500;
         font-size: 2rem;
         text-decoration: none;
@@ -252,7 +257,8 @@ footer.homepage {
 
     li a {
         color: #ffffff;
-        font-family: "Caveat", cursive;
+        /*font-family: "Caveat", cursive;*/
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 500;
         font-size: 2rem;
         text-decoration: none;        
@@ -346,6 +352,12 @@ footer.homepage {
         height: auto;
     }
 
+    .image-pavlova {
+        width: 90%;
+        padding: 10px;
+        height: auto;
+    }
+
     /*on all desktop pages other than homepage*/
     main.others {
         height: 150vh;
@@ -372,6 +384,10 @@ footer.homepage {
     .image-seafood {
         display: none;
     }
+
+    .image-pavlova {
+        display: none;
+    }
 }
 
 /*styling desktop version bookings page*/
@@ -394,5 +410,58 @@ footer.homepage {
     }
     .form {
         width: 100%;
+    }
+}
+
+/*styling desktop version vouchers page*/
+@media screen and (min-width: 600px){
+    .form {
+        float: left;
+        width: 30%;
+    }
+
+    .image-koru {
+        float: left;
+        width: 50%;
+    }
+}
+
+/*styling mobile version vouchers page*/
+@media screen and (max-width:600px){
+    .image-koru {
+        display: none;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+/*styling desktop version contact page*/
+@media screen and (min-width: 600px){
+
+
+
+}
+
+/*styling mobile version contact page*/
+@media screen and (max-width:600px){
+    #video {
+        display: none;       
+    }
+}
+
+/*styling desktop version about us page*/
+@media screen and (min-width: 600px){
+    #owner-mobile {
+        display: none;       
+    }
+
+
+}
+
+/*styling mobile version about us page*/
+@media screen and (max-width:600px){
+    #owner-desktop {
+        display: none;       
     }
 }
