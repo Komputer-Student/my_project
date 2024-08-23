@@ -37,6 +37,11 @@ h3 {
     font-size: 1.8rem;
     font-style: normal;
     color: #ffffff;
+    text-align: center;
+}
+
+p{
+    text-align: center;
 }
 
 body.others {
@@ -62,11 +67,17 @@ ul {
 }
 
 .info-link {
-    color: blue;
-    -webkit-text-stroke-width: 0.2px;
-    -webkit-text-stroke-color: black;
+    color: rgb(90, 120, 255);
+    font-size: 1.5rem;
+    /*-webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;*/
     text-decoration: none;
 }
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
 
 
 
@@ -325,25 +336,50 @@ footer.homepage {
 }
 
 /*styling menu page all sizes*/
+div.menu {
+    box-sizing: border-box;
+    text-align: center;
+    /*width: 100%;*/
+    margin: 10px;
+}
 
+dt {
+    font-size: 1.3rem;
+}
+
+dd {
+    margin-bottom: 20px;
+}
+
+.menu-drinks li {
+    margin-bottom: 5px;
+}
+
+.menu-appetizers, .menu-mains, .menu-drinks {
+    border: 5px solid white;
+    margin: 10px;
+}
 
 /*styling desktop version menu page*/
 @media screen and (min-width: 600px){
+    main.menu-page {
+        height: 190vh;
+    }
+
     div.menu {
         box-sizing: border-box;
-        width: 100%;
-        margin: 10px;
+
     }
 
 
     .menu-appetizers, .menu-mains, .menu-drinks {
-        border: 5px solid white;
-        height: 120vh;
+        height: 180vh;
         float: left;
-        width: 33%;
+        width: 32%;
         box-sizing: border-box;
         padding: 15px;
     }
+
 
 
     .image-seafood {
@@ -394,12 +430,18 @@ footer.homepage {
 @media screen and (min-width: 600px){
     .form {
         float: left;
+        padding: 10px;
+        margin: 1%;
         width: 30%;
     }
 
     .image-restaurant {
         float: left;
-        width: 50%;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 40%;
+        height: auto;
     }
 }
 
@@ -418,11 +460,17 @@ footer.homepage {
     .form {
         float: left;
         width: 30%;
+        padding: 10px;
+        margin: 1%;
     }
 
     .image-koru {
         float: left;
-        width: 50%;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 40%;
+        height: auto;
     }
 }
 
@@ -438,15 +486,45 @@ footer.homepage {
 
 /*styling desktop version contact page*/
 @media screen and (min-width: 600px){
+    .address {  
+        float: left;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 40%;
+        height: auto;    
+    }
 
+    #map {
+        
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 50%;
+        height: auto;    
+    }
 
-
+    .hours {
+        clear: both;
+        float: left;
+    }
+    
 }
+
+
 
 /*styling mobile version contact page*/
 @media screen and (max-width:600px){
     #video {
         display: none;       
+    }
+
+    #map {
+        width: 100%;
+    }
+
+    #calendar {
+        width: 100%;
     }
 }
 
@@ -456,12 +534,54 @@ footer.homepage {
         display: none;       
     }
 
+    #owner-desktop {
+        float: left;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 40%;
+        height: auto;
+    }
 
+    #Maori-leader {
+        float: left;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 25%;
+        height: auto;
+    }
+
+    .owners {
+        float: left;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        height: auto;
+        width: 25%;
+        text-align: center;
+    }
+
+    .local-Maori {
+        clear: both;
+        float: left;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 25%;
+        text-align: center;
+        height: auto;
+        
+    }
 }
 
 /*styling mobile version about us page*/
 @media screen and (max-width:600px){
     #owner-desktop {
         display: none;       
+    }
+
+    #Maori-leader {
+        display: none;
     }
 }
