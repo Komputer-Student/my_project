@@ -8,35 +8,27 @@
 }
 
 h1 {
-    /*font-family: "Caveat", cursive;*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /*text-shadow: 2px 3px 3px #a3a3a3;*/
     text-shadow: 2px 3px 3px #383838;
-    
-    font-weight: 600;
-    color: #ffffff;
+    font-weight: 100;
     font-style: italic;
     text-align: center;
     /*clear: left;*/
 }
 
 h2 {
-    /*font-family: "Caveat", cursive;*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 2rem;
     font-style: normal;
-    color: #ffffff;
     text-align: center;
 }
 
 h3 {
-    /*font-family: "Caveat", cursive;*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
     font-style: normal;
-    color: #ffffff;
     text-align: center;
 }
 
@@ -46,7 +38,6 @@ p{
 
 body.others {
     position: relative;
-
 }
 
 ul {
@@ -69,8 +60,6 @@ ul {
 .info-link {
     color: rgb(90, 120, 255);
     font-size: 1.5rem;
-    /*-webkit-text-stroke-width: 0.2px;
-    -webkit-text-stroke-color: black;*/
     text-decoration: none;
 }
 
@@ -79,10 +68,9 @@ ul {
 }
 
 
-
-
 /*all versions of page other than homepage*/
 header.otherpages {
+    /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -98,12 +86,10 @@ footer.allothers {
     bottom: 0;
     width: 100%;
     padding: 2.5%;
-    /*background-color: #6E6E6E;*/
     height: 40vh;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    /*padding: 0.5em 0 3em 0.25em;*/
     /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
 }
@@ -117,18 +103,11 @@ body.home {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /*padding: 0.5em 0 3em 0.25em;*/
     /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
-    /*width: 100%;*/
-    /*background-color: #ebf2f5;*/
-    /*height: 100vh;*/
-    /*background-size: contain;*/
-    /*background-position: 0% 100%;*/
 }
 
 #booknow {
-    /*font-family: "Caveat", cursive;*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
     font-size: 2rem;
@@ -136,22 +115,12 @@ body.home {
     text-decoration: none;
     color: #383838;
     background: #fff;
-
     border: 1px solid #383838;
     border-radius: 10px;
     display: block;
     margin: auto;
     width: 20%;
-    
-    
     text-align: center;
-    font-display: optional;
-    /*display: flex;
-    padding: 10px 30px;
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-    */
 }
 
 footer.homepage {
@@ -166,7 +135,7 @@ footer.homepage {
     h1 {
         font-size: 450%;
         float: left;
-        padding-left: 15%;
+        padding-left: 10%;
     }
     
     #logo {
@@ -185,7 +154,6 @@ footer.homepage {
     }
 
     header {
-         
         height: 40vh;   
     }
 
@@ -194,8 +162,7 @@ footer.homepage {
     }
 
     #navbar {
-        width: 100%;
-        
+        width: 100%;        
     }
 
     #navmenu {
@@ -213,14 +180,11 @@ footer.homepage {
 
     li a {
         display: inline-block;
-        color: #ffffff;
-        /*font-family: "Caveat", cursive;*/
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 500;
         font-size: 2rem;
         text-decoration: none;
-        text-align: center;
-        
+        text-align: center;        
     }
 
     li a:hover {
@@ -230,8 +194,6 @@ footer.homepage {
     .navitems.active {
         background-color: #383838;
     }
-
-
 
     #navbar label {
         display: none;
@@ -262,13 +224,10 @@ footer.homepage {
         display: block;
         width: 100%;
         border-top: 1px solid #000000;
-        /*background-color: #22495e;*/
         background-color: #383838;
     }
 
     li a {
-        color: #ffffff;
-        /*font-family: "Caveat", cursive;*/
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 500;
         font-size: 2rem;
@@ -276,7 +235,6 @@ footer.homepage {
     }
 
     #navbar label {
-        color: #ffffff;
         float: right;
         padding-top: 5px;
         padding-right: 10px;
@@ -311,8 +269,9 @@ footer.homepage {
     }
 
 }
-/*styling desktop version homepage*/
 
+
+/*styling desktop version homepage*/
 @media screen and (min-width: 600px){
 .welcome {
     clear: both;
@@ -323,8 +282,9 @@ footer.homepage {
 }
 
 }
-/*styling mobile version homepage*/
 
+
+/*styling mobile version homepage*/
 @media screen and (max-width:600px){
 .welcome {
     display:none;
@@ -335,11 +295,11 @@ footer.homepage {
 }
 }
 
+
 /*styling menu page all sizes*/
 div.menu {
     box-sizing: border-box;
     text-align: center;
-    /*width: 100%;*/
     margin: 10px;
 }
 
@@ -368,7 +328,6 @@ dd {
 
     div.menu {
         box-sizing: border-box;
-
     }
 
 
@@ -379,8 +338,6 @@ dd {
         box-sizing: border-box;
         padding: 15px;
     }
-
-
 
     .image-seafood {
         width: 90%;
@@ -401,13 +358,11 @@ dd {
 
     /*on all desktop pages other than homepage*/
     footer.allothers {
-        /*background-color: #6E6E6E;*/
         position: relative;
         height: 20vh;
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: cover;
-        /*padding: 0.5em 0 3em 0.25em;*/
         /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
     }
@@ -425,6 +380,7 @@ dd {
         display: none;
     }
 }
+
 
 /*styling desktop version bookings page*/
 @media screen and (min-width: 600px){
@@ -445,6 +401,7 @@ dd {
     }
 }
 
+
 /*styling mobile version bookings page*/
 @media screen and (max-width:600px){
     .image-restaurant {
@@ -454,6 +411,7 @@ dd {
         width: 100%;
     }
 }
+
 
 /*styling desktop version vouchers page*/
 @media screen and (min-width: 600px){
@@ -474,6 +432,7 @@ dd {
     }
 }
 
+
 /*styling mobile version vouchers page*/
 @media screen and (max-width:600px){
     .image-koru {
@@ -483,6 +442,7 @@ dd {
         width: 100%;
     }
 }
+
 
 /*styling desktop version contact page*/
 @media screen and (min-width: 600px){
@@ -527,6 +487,7 @@ dd {
         width: 100%;
     }
 }
+
 
 /*styling desktop version about us page*/
 @media screen and (min-width: 600px){
@@ -574,6 +535,7 @@ dd {
         
     }
 }
+
 
 /*styling mobile version about us page*/
 @media screen and (max-width:600px){
