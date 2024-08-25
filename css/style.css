@@ -7,29 +7,28 @@
     color: #ffffff;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {   
     text-shadow: 2px 3px 3px #383838;
     font-weight: 100;
     font-style: italic;
-    text-align: center;
     /*clear: left;*/
 }
 
 h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
     font-size: 2rem;
     font-style: normal;
-    text-align: center;
 }
 
 h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
     font-style: normal;
-    text-align: center;
 }
 
 p{
@@ -182,7 +181,7 @@ footer.homepage {
         display: inline-block;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-decoration: none;
         text-align: center;        
     }
@@ -210,8 +209,12 @@ footer.homepage {
     }
 }
 
-
-
+/*styling fern to disappear on smaller screens*/
+@media screen and (max-width:1550px){
+    #fern {
+        display: none;
+    }
+}
 
 /*styling mobile version all pages*/
 @media screen and (max-width:600px){
@@ -260,9 +263,7 @@ footer.homepage {
         height: auto;
     }
 
-    #fern {
-        display: none;
-    }
+
 
     footer {
         text-align: center;
@@ -300,7 +301,7 @@ footer.homepage {
 div.menu {
     box-sizing: border-box;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
 }
 
 dt {
@@ -317,7 +318,7 @@ dd {
 
 .menu-appetizers, .menu-mains, .menu-drinks {
     border: 5px solid white;
-    margin: 10px;
+    margin: 5px;
 }
 
 /*styling desktop version menu page*/
@@ -336,18 +337,18 @@ dd {
         float: left;
         width: 32%;
         box-sizing: border-box;
-        padding: 15px;
+        padding: 2%;
     }
 
     .image-seafood {
         width: 90%;
-        padding: 10px;
+        padding: 2%;
         height: auto;
     }
 
     .image-pavlova {
         width: 90%;
-        padding: 10px;
+        padding: 2%;
         height: auto;
     }
 
