@@ -1,4 +1,4 @@
-/*Setting default styles for the page*/
+/*Setting default styles for all sizes all pages*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -53,39 +53,7 @@ ul {
 }
 
 
-
-
-
-
-/*all pages other than homepage all sizes*/
-header.otherpages {
-    /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-body.others {
-    position: relative;
-    background-color: #383838;
-}
-
-footer.allothers {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 2.5%;
-    height: 40vh;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
-}
-
-
-/*homepage all sizes*/
+/*all sizes homepage*/
 body.home {
     position: relative;
     height: 100vh;
@@ -119,10 +87,80 @@ footer.homepage {
     padding: 2.5%;
 }
 
-/*styling desktop pages all sizes */
+
+
+/*all sizes all pages other than homepage */
+header.otherpages {
+    /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body.others {
+    position: relative;
+    background-color: #383838;
+}
+
+footer.allothers {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 2.5%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
+}
+
+/*all sizes menu page*/
+div.menu {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 5px;
+}
+
+dt {
+    font-size: 1.3rem;
+}
+
+dd {
+    margin-bottom: 20px;
+}
+
+.menu-drinks li {
+    margin-bottom: 5px;
+}
+
+.menu-appetizers, .menu-mains, .menu-drinks {
+    border: 5px solid white;
+    margin: 5px;
+}
+
+.info-link {
+    color: rgb(90, 120, 255);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+/*all sizes about us page*/
+.owners p, .local-Maori p {
+    margin-bottom: 20px;
+}
+
+/*Desktop versions min width 600px*/
+
+/*desktop all pages */
 @media screen and (min-width: 600px){
     h1 {
-        font-size: 450%;
+        font-size: 400%;
         float: left;
         padding-left: 10%;
     }
@@ -199,17 +237,195 @@ footer.homepage {
     }
 }
 
-/*styling fern and video to disappear on smaller screens*/
-@media screen and (max-width:1550px){
-    #fern {
-        display: none;
+/*desktop version homepage*/
+@media screen and (min-width: 600px){
+    .welcome {
+        clear: both;
     }
-    #video {
-        display: none;
+    
+    #booknow {
+        width: 20%;
+    }
+    
+}
+
+/*desktop all pages other than homepage*/
+@media screen and (min-width: 600px){
+    main.others {
+        height: 150vh;
+    }
+
+    footer.allothers {
+        position: relative;
+        height: 20vh;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
     }
 }
 
-/*styling mobile version all pages*/
+/*desktop menu page*/
+@media screen and (min-width: 1050px){
+    main.menu-page {
+        height: 190vh;
+    }
+
+    div.menu {
+        box-sizing: border-box;
+    }
+
+    .menu-appetizers, .menu-mains, .menu-drinks {
+        height: 180vh;
+        float: left;
+        width: 32%;
+        box-sizing: border-box;
+        padding: 2%;
+    }
+
+    .image-seafood, .image-pavlova {
+        width: 90%;
+        padding: 2%;
+        height: auto;
+    }
+  
+}
+
+/*desktop version bookings page*/
+@media screen and (min-width: 600px){
+    .form {
+        float: left;
+        padding: 10px;
+        margin: 1%;
+        width: 30%;
+    }
+
+    .image-restaurant {
+        float: left;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 40%;
+        height: auto;
+    }
+}
+
+/*desktop version vouchers page*/
+@media screen and (min-width: 600px){
+    .form {
+        float: left;
+        width: 30%;
+        padding: 10px;
+        margin: 1%;
+    }
+
+    .image-koru {
+        float: left;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 40%;
+        height: auto;
+    }
+}
+
+/*desktop version contact page*/
+@media screen and (min-width: 600px){
+    .address {  
+        float: left;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 40%;
+        height: auto;    
+    }
+
+    #video {
+        margin-left: 12%;
+    }
+
+    #map {
+        float: left;
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        width: 40%;
+        height: 40%;    
+    }
+
+    .hours {
+        clear: both;
+        float: left;
+        margin-left: 10%;
+        margin-top: 8%;
+        width: 40%;
+        height: auto; 
+    }
+
+    #calendar {
+        float: left;
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        width: 40%;
+        height: 40%; 
+    }
+    
+}
+
+/*desktop version about us page*/
+@media screen and (min-width: 600px){
+    #image-owner-mobile {
+        display: none;       
+    }
+
+    #image-owner-desktop  {
+        float: left;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 40%;
+        height: auto;
+    }
+
+    #image-Maori-leader {
+        float: left;
+        padding: 10px;
+        margin-left: 25%;
+        margin-top: 2%;
+        width: 25%;
+        height: auto;
+    }
+
+    .owners {
+        float: left;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 5%;
+        height: auto;
+        width: 25%;
+        text-align: center;
+    }
+
+    .local-Maori {
+        clear: both;
+        float: left;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 25%;
+        text-align: center;
+        height: auto;
+        
+    }
+}
+
+
+/*Mobile versions max width 600px*/
+/*mobile version all pages*/
 @media screen and (max-width:600px){
     header.otherpages {
         height: 60vh;
@@ -264,21 +480,7 @@ footer.homepage {
 
 }
 
-
-/*styling desktop version homepage*/
-@media screen and (min-width: 600px){
-.welcome {
-    clear: both;
-}
-
-#booknow {
-    width: 20%;
-}
-
-}
-
-
-/*styling mobile version homepage*/
+/*Mobile version homepage*/
 @media screen and (max-width:600px){
 .welcome {
     display:none;
@@ -289,114 +491,14 @@ footer.homepage {
 }
 }
 
-
-/*styling menu page all sizes*/
-div.menu {
-    box-sizing: border-box;
-    text-align: center;
-    margin: 5px;
-}
-
-dt {
-    font-size: 1.3rem;
-}
-
-dd {
-    margin-bottom: 20px;
-}
-
-.menu-drinks li {
-    margin-bottom: 5px;
-}
-
-.menu-appetizers, .menu-mains, .menu-drinks {
-    border: 5px solid white;
-    margin: 5px;
-}
-
-.info-link {
-    color: rgb(90, 120, 255);
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.info-link:hover {
-    text-decoration: underline;
-}
-
-/*styling desktop version menu page*/
-@media screen and (min-width: 600px){
-    main.menu-page {
-        height: 190vh;
-    }
-
-    div.menu {
-        box-sizing: border-box;
-    }
-
-
-    .menu-appetizers, .menu-mains, .menu-drinks {
-        height: 180vh;
-        float: left;
-        width: 32%;
-        box-sizing: border-box;
-        padding: 2%;
-    }
-
-    .image-seafood, .image-pavlova {
-        width: 90%;
-        padding: 2%;
-        height: auto;
-    }
-
-    /*on all desktop pages other than homepage*/
-    main.others {
-        height: 150vh;
-    }
-
-    /*on all desktop pages other than homepage*/
-    footer.allothers {
-        position: relative;
-        height: 20vh;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: cover;
-        /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background-big-originalfocus.jpg');
-    }
-    
-}
-
-
-/*styling mobile version menu page*/
-@media screen and (max-width:600px){
+/*Mobile version menu page*/
+@media screen and (max-width:1050px){
     .image-seafood, .image-pavlova {
         display: none;
     }
 }
 
-
-/*styling desktop version bookings page*/
-@media screen and (min-width: 600px){
-    .form {
-        float: left;
-        padding: 10px;
-        margin: 1%;
-        width: 30%;
-    }
-
-    .image-restaurant {
-        float: left;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-        width: 40%;
-        height: auto;
-    }
-}
-
-
-/*styling mobile version bookings page*/
+/*mobile version bookings page*/
 @media screen and (max-width:600px){
     .image-restaurant {
         display: none;
@@ -406,28 +508,7 @@ dd {
     }
 }
 
-
-/*styling desktop version vouchers page*/
-@media screen and (min-width: 600px){
-    .form {
-        float: left;
-        width: 30%;
-        padding: 10px;
-        margin: 1%;
-    }
-
-    .image-koru {
-        float: left;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-        width: 40%;
-        height: auto;
-    }
-}
-
-
-/*styling mobile version vouchers page*/
+/*mobile version vouchers page*/
 @media screen and (max-width:600px){
     .image-koru {
         display: none;
@@ -437,56 +518,7 @@ dd {
     }
 }
 
-
-/*styling desktop version contact page*/
-@media screen and (min-width: 600px){
-    .address {  
-        float: left;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-        width: 40%;
-        height: auto;    
-    }
-
-    #video {
-        margin-left: 12%;
-    }
-
-    #map {
-        float: left;
-        padding: 10px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 2%;
-        width: 40%;
-        height: 40%;    
-    }
-
-    .hours {
-        clear: both;
-        float: left;
-        margin-left: 10%;
-        margin-top: 8%;
-        width: 40%;
-        height: auto; 
-    }
-
-    #calendar {
-        float: left;
-        padding: 10px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 2%;
-        width: 40%;
-        height: 40%; 
-    }
-    
-}
-
-
-
-/*styling mobile version contact page*/
+/*mobile version contact page*/
 @media screen and (max-width:600px){
     #video {
         display: none;       
@@ -507,60 +539,7 @@ dd {
     }
 }
 
-/* styling about us page all sizes*/
-.owners p, .local-Maori p {
-    margin-bottom: 20px;
-}
-
-/*styling desktop version about us page*/
-@media screen and (min-width: 600px){
-    #image-owner-mobile {
-        display: none;       
-    }
-
-    #image-owner-desktop  {
-        float: left;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-        width: 40%;
-        height: auto;
-    }
-
-    #image-Maori-leader {
-        float: left;
-        padding: 10px;
-        margin-left: 25%;
-        margin-top: 2%;
-        width: 25%;
-        height: auto;
-    }
-
-    .owners {
-        float: left;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 5%;
-        height: auto;
-        width: 25%;
-        text-align: center;
-    }
-
-    .local-Maori {
-        clear: both;
-        float: left;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 5%;
-        width: 25%;
-        text-align: center;
-        height: auto;
-        
-    }
-}
-
-
-/*styling mobile version about us page*/
+/*mobile version about us page*/
 @media screen and (max-width:600px){
     #image-owner-desktop {
         display: none;       
@@ -577,5 +556,19 @@ dd {
 
     #image-owner-mobile {
         width: 100%;
+    }
+}
+
+
+/*styling fern, image and video to disappear on smaller screens*/
+@media screen and (max-width:1400px){
+    #fern {
+        display: none;
+    }
+    #video {
+        display: none;
+    }
+    .image-pavlova{
+        display: none;
     }
 }
