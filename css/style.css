@@ -292,16 +292,17 @@ dd {
   
 }
 
-/*desktop version bookings page*/
+/*desktop version bookings page and vouchers page*/
 @media screen and (min-width: 600px){
     .form {
         float: left;
         padding: 10px;
         margin: 1%;
         width: 30%;
+        border: 0; 
     }
 
-    .image-restaurant {
+    .image-restaurant, .image-koru {
         float: left;
         padding: 10px;
         margin-left: 10%;
@@ -311,24 +312,6 @@ dd {
     }
 }
 
-/*desktop version vouchers page*/
-@media screen and (min-width: 600px){
-    .form {
-        float: left;
-        width: 30%;
-        padding: 10px;
-        margin: 1%;
-    }
-
-    .image-koru {
-        float: left;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-        width: 40%;
-        height: auto;
-    }
-}
 
 /*desktop version contact page*/
 @media screen and (min-width: 600px){
@@ -343,6 +326,7 @@ dd {
 
     #video {
         margin-left: 12%;
+        border: 0;
     }
 
     #map {
@@ -372,6 +356,8 @@ dd {
         margin-top: 2%;
         width: 40%;
         height: 40%; 
+        border: 0;
+        overflow: hidden;
     }
     
 }
@@ -498,25 +484,17 @@ dd {
     }
 }
 
-/*mobile version bookings page*/
+/*mobile version bookings page and vouchers page*/
 @media screen and (max-width:600px){
-    .image-restaurant {
+    .image-restaurant, .image-koru  {
         display: none;
     }
     .form {
         width: 100%;
+        border: 0; 
     }
 }
 
-/*mobile version vouchers page*/
-@media screen and (max-width:600px){
-    .image-koru {
-        display: none;
-    }
-    .form {
-        width: 100%;
-    }
-}
 
 /*mobile version contact page*/
 @media screen and (max-width:600px){
@@ -530,6 +508,8 @@ dd {
 
     #calendar {
         width: 100%;
+        border: 0;
+        overflow: hidden;
     }
 
     .address, .hours {
