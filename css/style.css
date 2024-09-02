@@ -12,7 +12,8 @@
 /*styles for headings and text*/
 h1,
 h2,
-h3 {
+h3,
+p {
   text-align: center;
 }
 
@@ -32,10 +33,6 @@ h3 {
   font-weight: 400;
   font-size: 1.8rem;
   font-style: normal;
-}
-
-p {
-  text-align: center;
 }
 
 ul {
@@ -149,6 +146,7 @@ dd {
   margin-bottom: 5px;
 }
 
+/*creating borders and margins for menu columns*/
 .menu-appetizers,
 .menu-mains,
 .menu-drinks {
@@ -321,6 +319,7 @@ dd {
     padding: 10px;
     margin: 1%;
     width: 30%;
+    height: 90%;
     border: 0;
   }
 
@@ -410,7 +409,7 @@ dd {
   #image-Maori-leader {
     float: left;
     padding: 10px;
-    margin-left: 25%;
+    margin-left: 10%;
     margin-top: 2%;
     width: 25%;
     height: auto;
@@ -423,7 +422,7 @@ dd {
     margin-left: 10%;
     margin-top: 5%;
     height: auto;
-    width: 25%;
+    width: 30%;
     text-align: center;
   }
 
@@ -432,9 +431,8 @@ dd {
     clear: both;
     float: left;
     padding: 10px;
-    margin-left: 10%;
-    margin-top: 5%;
-    width: 25%;
+    margin: 5% 10% 0 10%;
+    width: 30%;
     text-align: center;
     height: auto;
   }
@@ -562,12 +560,8 @@ dd {
 
 /*mobile version about us page*/
 @media screen and (max-width: 600px) {
-  /*hiding the desktop version of the image*/
-  #image-owner-desktop {
-    display: none;
-  }
-
-  /*hiding the image*/
+  /*hiding images*/
+  #image-owner-desktop,
   #image-Maori-leader {
     display: none;
   }
@@ -588,12 +582,8 @@ dd {
 /*styling fern, image and video to disappear on smaller screens*/
 @media screen and (max-width: 1400px) {
   /*hiding the elements*/
-  #fern {
-    display: none;
-  }
-  #video {
-    display: none;
-  }
+  #fern,
+  #video,
   .image-pavlova {
     display: none;
   }
