@@ -299,7 +299,7 @@ dd {
     float: left;
     width: 32%;
     box-sizing: border-box;
-    padding: 2%;
+    padding: 1%;
   }
 
   /*positioning the images in the menu*/
@@ -583,8 +583,14 @@ dd {
 @media screen and (max-width: 1400px) {
   /*hiding the elements*/
   #fern,
-  #video,
-  .image-pavlova {
+  #video {
     display: none;
   }
 }
+
+@media screen and (max-width: 1400px) {
+    .image-pavlova{
+      display: none;
+    }
+}
+
