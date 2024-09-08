@@ -506,15 +506,6 @@ dd {
   }
 }
 
-/*Mobile version menu page*/
-@media screen and (max-width: 1050px) {
-  /*hiding the menu images*/
-  .image-seafood,
-  .image-pavlova {
-    display: none;
-  }
-}
-
 /*mobile version bookings page and vouchers page*/
 @media screen and (max-width: 600px) {
   /*hiding the images*/
@@ -594,3 +585,8 @@ dd {
     }
 }
 
+@media screen and (max-width: 1050px) {
+  .image-seafood {
+    display: none;
+  }
+}
