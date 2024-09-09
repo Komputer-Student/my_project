@@ -142,14 +142,14 @@ dd {
   margin-bottom: 20px;
 }
 
-.menu-drinks li {
+#menu-drinks li {
   margin-bottom: 5px;
 }
 
 /*creating borders and margins for menu columns*/
-.menu-appetizers,
-.menu-mains,
-.menu-drinks {
+#menu-appetizers,
+#menu-mains,
+#menu-drinks {
   border: 5px solid white;
   margin: 5px;
 }
@@ -292,9 +292,9 @@ dd {
   }
 
   /*positioning the menu columns*/
-  .menu-appetizers,
-  .menu-mains,
-  .menu-drinks {
+  #menu-appetizers,
+  #menu-mains,
+  #menu-drinks {
     height: 180vh;
     float: left;
     width: 32%;
