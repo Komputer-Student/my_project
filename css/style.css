@@ -54,6 +54,7 @@ ul {
   display: none;
 }
 
+
 /*all sizes homepage*/
 /*setting the background image to cover the entire homepage*/
 body.home {
@@ -91,6 +92,7 @@ footer.homepage {
   padding: 2.5%;
 }
 
+
 /*all sizes all pages other than homepage */
 /*the banner with the background image at the top of the page*/
 header.otherpages {
@@ -122,6 +124,7 @@ footer.allothers {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/background-big-originalfocus.jpg");
 }
+
 
 /*all sizes menu page*/
 /*creating the layout structure for the menu page*/
@@ -165,12 +168,14 @@ dd {
   text-decoration: underline;
 }
 
+
 /*all sizes about us page*/
 /*using margins to create spaces between sentences in the paragraphs*/
 .owners p,
 .local-Maori p {
   margin-bottom: 20px;
 }
+
 
 /*Desktop versions min width 600px*/
 /*desktop all pages */
@@ -251,6 +256,7 @@ dd {
   }
 }
 
+
 /*desktop version homepage*/
 @media screen and (min-width: 600px) {
   /*clearing the header floats*/
@@ -264,9 +270,10 @@ dd {
   }
 }
 
-/*desktop all pages other than homepage*/
+
+/*desktop pages other than homepage*/
 @media screen and (min-width: 600px) {
-  /*creating the space for the main elements of the page*/
+  /*creating the space for the bookings page, about us page, hours page*/
   main.others {
     height: 150vh;
   }
@@ -283,6 +290,31 @@ dd {
       url("../images/background-big-originalfocus.jpg");
   }
 }
+
+
+/*desktop version bookings page*/
+@media screen and (min-width: 600px) {
+  /*positioning and styling the google form*/
+  .form {
+    float: left;
+    padding: 10px;
+    margin: 1%;
+    width: 30%;
+    height: 90%;
+    border: 0;
+  }
+
+  /*positioning the images beside the form*/
+  .image-restaurant {
+    float: left;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 40%;
+    height: auto;
+  }
+}
+
 
 /*desktop menu page*/
 @media screen and (min-width: 1050px) {
@@ -311,65 +343,52 @@ dd {
   }
 }
 
-/*desktop version bookings page and vouchers page*/
-@media screen and (min-width: 600px) {
-  /*positioning and styling the google forms*/
-  .form {
-    float: left;
-    padding: 10px;
-    margin: 1%;
-    width: 30%;
-    height: 90%;
-    border: 0;
-  }
-
-  /*positioning the images beside the forms*/
-  .image-restaurant,
-  .image-koru {
-    float: left;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
-    width: 40%;
-    height: auto;
-  }
-}
 
 /*desktop version contact page*/
 @media screen and (min-width: 600px) {
+  main.main-contact {
+    height: 95vh;
+  }
+
   /*positioning and styling the address paragraph*/
   .address {
-    float: left;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
-    width: 40%;
-    height: auto;
-  }
-
-  /*positioning the video*/
-  #video {
-    margin-left: 12%;
-    border: 0;
-  }
-
-  /*positioning the map*/
-  #map {
     float: left;
     padding: 10px;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
-    width: 40%;
-    height: 40%;
+    /*width: 40%;*/
+    height: auto;
   }
 
+  /*positioning the video*/
+  #video {
+    /*margin-left: 5%;*/
+    margin-right:10%;
+    margin-top: 8%;
+    float: right;
+    border: 0;
+  }
+
+  /*positioning the map*/
+  #map {
+    /*float: left;*/
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /*margin-top: 2%;
+    width: 40%;
+    height: 40%;*/
+  }
+}
+
+/*desktop version of Hours page*/
+@media screen and (min-width: 600px){
   /*positioning and styling the hours paragraph*/
   .hours {
-    clear: both;
     float: left;
     margin-left: 10%;
-    margin-top: 8%;
+    margin-top: 2%;
     width: 40%;
     height: auto;
   }
@@ -381,12 +400,23 @@ dd {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
-    width: 40%;
-    height: 40%;
+    /*width: 80%;
+    height: auto;*/
+    width: 100%;
     border: 0;
     overflow: hidden;
   }
+
+  .image-koru {
+    float: left;
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 20%;
+    height: auto;
 }
+}
+
 
 /*desktop version about us page*/
 @media screen and (min-width: 600px) {
@@ -437,6 +467,7 @@ dd {
     height: auto;
   }
 }
+
 
 /*Mobile versions max width 600px*/
 /*mobile version all pages*/
@@ -493,6 +524,7 @@ dd {
   }
 }
 
+
 /*Mobile version homepage*/
 @media screen and (max-width: 600px) {
   /*hiding the welcome paragraph*/
@@ -506,11 +538,11 @@ dd {
   }
 }
 
-/*mobile version bookings page and vouchers page*/
+
+/*mobile version bookings page*/
 @media screen and (max-width: 600px) {
   /*hiding the images*/
-  .image-restaurant,
-  .image-koru {
+  .image-restaurant {
     display: none;
   }
 
@@ -521,7 +553,8 @@ dd {
   }
 }
 
-/*mobile version contact page*/
+
+/*mobile version contact page and hours page*/
 @media screen and (max-width: 600px) {
   /*hiding the video*/
   #video {
@@ -574,16 +607,14 @@ dd {
 @media screen and (max-width: 1400px) {
   /*hiding the elements*/
   #fern,
-  #video {
+  #video,
+  .image-pavlova,
+  .image-koru {
     display: none;
   }
 }
 
-@media screen and (max-width: 1400px) {
-    .image-pavlova{
-      display: none;
-    }
-}
+
 
 @media screen and (max-width: 1050px) {
   .image-seafood {
