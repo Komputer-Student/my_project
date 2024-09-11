@@ -254,11 +254,10 @@ dd {
   #footer-hours {
     text-align: center;
   }
-}
 
 
-/*desktop version homepage*/
-@media screen and (min-width: 600px) {
+
+  /*desktop version homepage*/
   /*clearing the header floats*/
   .welcome {
     clear: both;
@@ -268,11 +267,10 @@ dd {
   #booknow {
     width: 20%;
   }
-}
 
 
-/*desktop pages other than homepage*/
-@media screen and (min-width: 600px) {
+
+  /*desktop pages other than homepage*/
   /*creating the space for the bookings page, about us page, hours page*/
   main.others {
     height: 150vh;
@@ -289,11 +287,9 @@ dd {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../images/background-big-originalfocus.jpg");
   }
-}
 
 
-/*desktop version bookings page*/
-@media screen and (min-width: 600px) {
+  /*desktop version bookings page*/
   /*positioning and styling the google form*/
   .form {
     float: left;
@@ -304,7 +300,7 @@ dd {
     border: 0;
   }
 
-  /*positioning the images beside the form*/
+  /*positioning the image beside the form*/
   .image-restaurant {
     float: left;
     padding: 10px;
@@ -357,14 +353,12 @@ dd {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
-    /*width: 40%;*/
     height: auto;
   }
 
   /*positioning the video*/
   #video {
-    /*margin-left: 5%;*/
-    margin-right:10%;
+    margin-right:5%;
     margin-top: 8%;
     float: right;
     border: 0;
@@ -372,18 +366,12 @@ dd {
 
   /*positioning the map*/
   #map {
-    /*float: left;*/
     padding: 10px;
     margin-left: 5%;
     margin-right: 5%;
-    /*margin-top: 2%;
-    width: 40%;
-    height: 40%;*/
   }
-}
 
-/*desktop version of Hours page*/
-@media screen and (min-width: 600px){
+  /*desktop version of Hours page*/
   /*positioning and styling the hours paragraph*/
   .hours {
     float: left;
@@ -400,8 +388,6 @@ dd {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
-    /*width: 80%;
-    height: auto;*/
     width: 100%;
     border: 0;
     overflow: hidden;
@@ -415,11 +401,9 @@ dd {
     width: 20%;
     height: auto;
 }
-}
 
 
-/*desktop version about us page*/
-@media screen and (min-width: 600px) {
+  /*desktop version about us page*/
   /*hiding the mobile size image of the owner for the desktop display*/
   #image-owner-mobile {
     display: none;
@@ -522,11 +506,9 @@ dd {
   footer {
     text-align: center;
   }
-}
 
 
-/*Mobile version homepage*/
-@media screen and (max-width: 600px) {
+  /*Mobile version homepage*/
   /*hiding the welcome paragraph*/
   .welcome {
     display: none;
@@ -536,12 +518,10 @@ dd {
   #booknow {
     width: 50%;
   }
-}
 
 
-/*mobile version bookings page*/
-@media screen and (max-width: 600px) {
-  /*hiding the images*/
+  /*mobile version bookings page*/
+  /*hiding the image*/
   .image-restaurant {
     display: none;
   }
@@ -551,11 +531,9 @@ dd {
     width: 100%;
     border: 0;
   }
-}
 
 
-/*mobile version contact page and hours page*/
-@media screen and (max-width: 600px) {
+  /*mobile version contact page and hours page*/
   /*hiding the video*/
   #video {
     display: none;
@@ -580,10 +558,9 @@ dd {
     margin-bottom: 5%;
     padding: 20px;
   }
-}
 
-/*mobile version about us page*/
-@media screen and (max-width: 600px) {
+
+  /*mobile version about us page*/
   /*hiding images*/
   #image-owner-desktop,
   #image-Maori-leader {
@@ -613,8 +590,6 @@ dd {
     display: none;
   }
 }
-
-
 
 @media screen and (max-width: 1050px) {
   .image-seafood {
