@@ -1,160 +1,83 @@
-/*Setting default styles for all sizes all pages*/
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1.2rem;
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
+  font-style: normal;
   color: #ffffff;
+  text-align: center;
 }
 
-/*styles for headings and text*/
-h1,
-h2,
-h3,
-p {
-  text-align: center;
+.w3-caveat {
+  font-family: "Caveat", cursive;
 }
 
 h1 {
   text-shadow: 2px 3px 3px #383838;
   font-weight: 100;
-  font-style: italic;
 }
 
-h2 {
-  font-weight: 900;
-  font-size: 2rem;
-  font-style: normal;
-}
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/background-big-originalfocus.jpg"); 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-h3 {
-  font-weight: 400;
-  font-size: 1.8rem;
-  font-style: normal;
-}
-
-ul {
-  list-style-type: none;
-}
-
-/*styling and positioning logo*/
-#logo {
+#logo, #fern {
+  width: 30%;
   height: auto;
   fill: #fff;
   margin-left: 2.5%;
-  z-index: 1;
-  position: relative;
-  float: left;
-}
-
-/*hiding the checkbox for the hamburger*/
-#hamburger {
-  display: none;
-}
-
-
-/*all sizes homepage*/
-/*setting the background image to cover the entire homepage*/
-body.home {
-  position: relative;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/background-big-originalfocus.jpg");
-}
-
-/*styling the book now button that links to the bookings page*/
-#booknow {
-  font-weight: 500;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #383838;
-  background: #fff;
-  border: 1px solid #383838;
-  border-radius: 10px;
-  display: block;
-  margin: auto;
-  width: 20%;
-  text-align: center;
-}
-
-/*positioning the footer for the homepage*/
-footer.homepage {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   padding: 2.5%;
 }
 
-
-/*all sizes all pages other than homepage */
-/*the banner with the background image at the top of the page*/
-header.otherpages {
-  /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/background-big-originalfocus.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+main {
+  flex-grow: 1;
 }
 
-/*setting the body background color*/
-body.others {
-  position: relative;
+.not-home {
   background-color: #383838;
+  flex-grow: 1;
 }
 
-/*positioning the footer and setting the background image*/
-footer.allothers {
-  position: relative;
-  bottom: 0;
+footer {
+
   width: 100%;
-  padding: 2.5%;
-  height: 40vh;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/background-big-originalfocus.jpg");
+  padding: 3em 2em;
 }
 
+.footer-container, .menu-container, .hours-container {
+  display: flex;
+}
 
-/*all sizes menu page*/
-/*creating the layout structure for the menu page*/
-div.menu {
-  box-sizing: border-box;
+.footer-item, #menu-appetizers, #menu-mains, #menu-drinks, .hours-item {
   text-align: center;
+  display: block;
+}
+
+/*menu page*/
+.menu-container {
   margin: 5px;
 }
 
-/*headings for the menu items*/
-dt {
-  font-size: 1.3rem;
-  font-style: italic;
+#menu-appetizers, #menu-mains, #menu-drinks{
+  border: 5px solid white;
+  margin: 5px;
 }
 
-/*using margins to create spaces in the text between list elements*/
 dd {
   margin-bottom: 20px;
 }
-
-#menu-drinks li {
+ul {
+  list-style-type: none;
   margin-bottom: 5px;
-}
-
-/*creating borders and margins for menu columns*/
-#menu-appetizers,
-#menu-mains,
-#menu-drinks {
-  border: 5px solid white;
-  margin: 5px;
 }
 
 /*styling the links for the menu page*/
@@ -168,433 +91,121 @@ dd {
   text-decoration: underline;
 }
 
-
-/*all sizes about us page*/
-/*using margins to create spaces between sentences in the paragraphs*/
-.owners p,
-.local-Maori p {
-  margin-bottom: 20px;
+#form {
+  border: 0;
 }
 
-
-/*Desktop versions min width 600px*/
-/*desktop all pages */
-@media screen and (min-width: 600px) {
-  /*styling and positioning the elements of the banner*/
-  h1 {
-    font-size: 400%;
-    float: left;
-    padding-left: 10%;
-  }
-
-  #logo {
-    width: 8%;
-    height: auto;
-  }
-
-  #fern {
-    width: 8%;
-    height: auto;
-    float: right;
-    margin-right: 2.5%;
-    border: 5px solid white;
-    border-radius: 25px;
-  }
-
-  header,
-  header.otherpages {
-    height: 40vh;
-  }
-
-  /*styling and positioning the navigation in the banner*/
-  #navbar {
-    width: 100%;
-  }
-
-  #navmenu {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .navitems {
-    float: left;
-    width: 16.6%;
-    box-sizing: border-box;
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  li a {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: 500;
-  }
-
-  li a:hover {
-    color: #c0c0c0;
-  }
-
-  .navitems.active {
-    background-color: #383838;
-  }
-
-  #navbar label {
-    display: none;
-  }
-
-  /*positioning the footer paragraphs at the bottom of the page*/
-  #footer-address {
-    float: left;
-    text-align: center;
-    width: 50%;
-  }
-
-  #footer-hours {
-    text-align: center;
-  }
-
-
-
-  /*desktop version homepage*/
-  /*clearing the header floats*/
-  .welcome {
-    clear: both;
-  }
-
-  /*creating the width of the book now button*/
-  #booknow {
-    width: 20%;
-  }
-
-
-
-  /*desktop pages other than homepage*/
-  /*creating the space for the bookings page, about us page, hours page*/
-  main.others {
-    height: 150vh;
-  }
-
-  /*styling and positioning the footer with the background image*/
-  footer.allothers {
-    position: relative;
-    height: 20vh;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/background-big-originalfocus.jpg");
-  }
-
-
-  /*desktop version bookings page*/
-  /*positioning and styling the google form*/
-  .form {
-    float: left;
-    padding: 10px;
-    margin: 1%;
-    width: 30%;
-    height: 90%;
+  /*positioning the video*/
+  #video {
+    width: 75%;
+    margin:5%;
     border: 0;
   }
 
-  /*positioning the image beside the form*/
-  .image-restaurant {
-    float: left;
+  /*positioning the map*/
+  #map {
+    width: 60%;
     padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
-    width: 40%;
-    height: auto;
+    margin: 5%;
+    
   }
+
+  /*positioning the calendar*/
+  #calendar {
+    padding: 10px;
+    margin: 5%;
+    width: 60%;
+    border: 0;
+    overflow: hidden;
+  }
+
+/*medium and large screens*/
+@media only screen and (min-width: 601px) {
+.footer-container, 
+.menu-container,
+.hours-container {
+  flex-direction: row;  
 }
 
+.footer-item,
+.hours-item {
+  width: 50%;  
+}
 
-/*desktop menu page*/
-@media screen and (min-width: 1050px) {
-  /*creating a large main section to fit the menu*/
-  main.menu-page {
-    height: 190vh;
-  }
+/*menu page*/
+#menu-appetizers, #menu-mains, #menu-drinks{
+  width: 33%;
+}
 
-  /*positioning the menu columns*/
-  #menu-appetizers,
-  #menu-mains,
-  #menu-drinks {
-    height: 180vh;
-    float: left;
-    width: 32%;
-    box-sizing: border-box;
-    padding: 1%;
-  }
-
-  /*positioning the images in the menu*/
+/*positioning the images in the menu*/
   .image-seafood,
   .image-pavlova {
     width: 90%;
     padding: 2%;
     height: auto;
   }
+
+
+
+#privacy {
+  
+  text-align: center;
+}
+ 
+a {
+  text-decoration: none;
 }
 
 
-/*desktop version contact page*/
-@media screen and (min-width: 600px) {
-  main.main-contact {
-    height: 95vh;
+h1 {
+  display: inline;
+}
+
+#image-koru {
+  padding: 10px;
+  margin-left: 20%;
+  margin-top: 15%;
+  width: 60%;
+  height: auto;
+}
+
+
+}
+
+/*small screens*/
+@media only screen and (max-width: 600px) {
+  .footer-container, .menu-container {
+    flex-direction: column;
+    line-height: 1.2;
   }
 
-  /*positioning and styling the address paragraph*/
-  .address {
-    float: left;
-    padding: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
-    height: auto;
-  }
-
-  /*positioning the video*/
-  #video {
-    margin-right:5%;
-    margin-top: 8%;
-    float: right;
-    border: 0;
-  }
-
-  /*positioning the map*/
-  #map {
-    padding: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  /*desktop version of Hours page*/
-  /*positioning and styling the hours paragraph*/
-  .hours {
-    float: left;
-    margin-left: 10%;
-    margin-top: 2%;
-    width: 40%;
-    height: auto;
-  }
-
-  /*positioning the calendar*/
-  #calendar {
-    float: left;
-    padding: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
+  .footer-item, #menu-appetizers, #menu-mains, #menu-drinks {
     width: 100%;
-    border: 0;
-    overflow: hidden;
   }
 
-  .image-koru {
-    float: left;
-    padding: 10px;
-    margin-left: 20%;
-    margin-top: 10%;
-    width: 20%;
-    height: auto;
-}
-
-
-
-
-  /*desktop version about us page*/
-  /*hiding the mobile size image of the owner for the desktop display*/
-  #image-owner-mobile {
+  #fern {
     display: none;
-  }
-
-  /*positioning and styling the desktop size image*/
-  #image-owner-desktop {
-    float: left;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
-    width: 40%;
-    height: auto;
-  }
-
-  /*positioning and styling the image*/
-  #image-Maori-leader {
-    float: left;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
-    width: 25%;
-    height: auto;
-  }
-
-  /*positioning and styling the paragraph about the owners*/
-  .owners {
-    float: left;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 5%;
-    height: auto;
-    width: 30%;
-    text-align: center;
-  }
-
-  /*positioning and styling the paragraph about the local Maori*/
-  .local-Maori {
-    clear: both;
-    float: left;
-    padding: 10px;
-    margin: 5% 10% 0 10%;
-    width: 30%;
-    text-align: center;
-    height: auto;
-  }
-}
-
-
-/*Mobile versions max width 600px*/
-/*mobile version all pages*/
-@media screen and (max-width: 600px) {
-  /*setting the size and styles of the header*/
-  header.otherpages {
-    height: 60vh;
-  }
-
-  h1 {
-    clear: both;
-    font-size: 300%;
   }
 
   #logo {
-    width: 20%;
-    height: auto;
+    width: 15%;
   }
 
-  /*style for the navigation drop down list*/
-  .navitems {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border-top: 1px solid #000000;
-    background-color: #383838;
-  }
-
-  li a {
-    font-weight: 500;
-    font-size: 2rem;
-    text-decoration: none;
-  }
-
-  #navbar label {
-    float: right;
-    padding-top: 5px;
-    padding-right: 10px;
-    font-size: 2rem;
-    font-style: normal;
-  }
-
-  #navmenu {
-    display: none;
-  }
-
-  #navbar input:checked ~ #navmenu {
-    display: block;
-  }
-
-  /*styling the mobile footer*/
-  footer {
-    text-align: center;
-  }
-
-
-  /*Mobile version homepage*/
-  /*hiding the welcome paragraph*/
-  .welcome {
-    display: none;
-  }
-
-  /*creating a large book now button*/
-  #booknow {
-    width: 50%;
-  }
-
-
-  /*mobile version bookings page*/
-  /*hiding the image*/
-  .image-restaurant {
-    display: none;
-  }
-
-  /*setting the size of the form*/
-  .form {
-    width: 100%;
-    border: 0;
-  }
-
-
-  /*mobile version contact page and hours page*/
-  /*hiding the video*/
-  #video {
-    display: none;
-  }
-
-  /*setting the size of the map*/
-  #map {
-    width: 100%;
-  }
-
-  /*setting the size of the calendar*/
-  #calendar {
-    width: 100%;
-    border: 0;
-    overflow: hidden;
-  }
-
-  /*positioning the address and hours paragraphs*/
-  .address,
-  .hours {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 20px;
-  }
-
-
-  /*mobile version about us page*/
-  /*hiding images*/
-  #image-owner-desktop,
-  #image-Maori-leader {
-    display: none;
-  }
-
-  /*positioning the owners and local Maori paragraphs*/
-  .owners,
-  .local-Maori {
-    margin-top: 5%;
-    padding: 20px;
-  }
-
-  #image-owner-mobile {
-    /*positioning and styling the mobile size image*/
-    width: 100%;
-  }
-}
-
-/*styling fern, image and video to disappear on smaller screens*/
-@media screen and (max-width: 1400px) {
-  /*hiding the elements*/
-  #fern,
-  #video,
+  .image-seafood,
   .image-pavlova,
-  .image-koru {
+  #image-koru {
     display: none;
   }
+
+  #form,
+  #map,
+  #calendar {
+    padding: 10px;
+    margin: 1%;
+    width: 100%;
+    border: 0;
+  }
+
+
 }
 
-@media screen and (max-width: 1050px) {
-  .image-seafood {
-    display: none;
-  }
-}
