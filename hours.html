@@ -7,62 +7,95 @@
     <meta name="keywords" content="The Haukai Restaurant hours, restaurants near me opening times">
     <meta name="author" content="Jonathan Perris">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
 
   <!--body-->
-  <body class="others">
+  <body>
     <!--the banner-->
-    <header class="otherpages">
-      <!--navigation-->
-      <nav id="navbar">
-        <!--the hamburger-->
-        <label for="hamburger">&#9776;</label>
-        <input type="checkbox" id="hamburger">
-        <!--navigation bar-->
-        <ul id="navmenu">
-          <li class="navitems"><a href="index.html">Home</a></li>
-          <li class="navitems"><a href="bookings.html">Bookings</a></li>
-          <li class="navitems"><a href="menu.html">Menu</a></li>
-          <li class="navitems"><a href="contact.html">Contact</a></li>
-          <li class="navitems active"><a href="hours.html">Hours</a></li>
-          <li class="navitems"><a href="aboutus.html">About us</a></li>
-        </ul>
-      </nav>
-      <!--Logo created on LOGO.com-->
-      <a href="index.html"><img id="logo" src="images/logo-no-background-white-resized.png" alt="The Haukai Restaurant logo"></a>
-      <h1>The Haukai Restaurant</h1>
-      <!--Reference: Silver fern- Wikimedia (2024). Silverfern.svg Multiple, Public domain, [Digital image], Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Silver_fern.svg-->
-      <img id="fern" src="images/Silver_fern_white.png" alt="">
+    <header >
+      <div id="nav-desktop" class="w3-content">
+        <div class="w3-top-left w3-bar w3-padding w3-xlarge w3-opacity-min">           
+          <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Home</a>
+          <a href="bookings.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Bookings</a>     
+          <a href="menu.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Menu</a>        
+          <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Contact</a>        
+          <a href="hours.html" class="w3-bar-item w3-button w3-hide-small w3-black w3-xlarge">Hours</a> 
+          <a href="aboutus.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">About us</a>
+          <a href="staff.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Staff</a>   
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+  
+    <div id="demo" class="w3-bar-block w3-dark-gray w3-hide w3-hide-large w3-hide-medium">
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="bookings.html" class="w3-bar-item w3-button">Bookings</a>
+      <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+      <a href="hours.html" class="w3-bar-item w3-button">Hours</a>
+      <a href="aboutus.html"  class="w3-bar-item w3-button">About us</a>
+      <a href="staff.html" class="w3-bar-item w3-button">Staff</a>
+    </div>
+
+    <div id="header" class="w3-row-padding">
+
+      <div class="w3-container w3-quarter">
+        <!--Logo created on LOGO.com-->
+        <a href="index.html"><img id="logo" src="images/logo-no-background-white-resized.png" alt="The Haukai Restaurant logo"></a>
+      </div>
+      <div class="w3-container w3-half w3-center">
+        <h1 class="w3-caveat w3-jumbo">The Haukai Restaurant</h1>
+      </div>
+      <div class="w3-container w3-quarter w3-hide-small ">
+        <!--Reference: Silver fern- Wikimedia (2024). Silverfern.svg Multiple, Public domain, [Digital image], Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Silver_fern.svg-->
+        <img class="w3-border w3-border-white w3-round-xlarge w3-leftbar w3-topbar w3-rightbar w3-bottombar" id="fern" src="images/Silver_fern_white.png" alt="">
+      </div>
+  </div>
     </header>
 
-    <main class="main-contact">
+    <main class="not-home">
       <!--paragraph with details of opening hours-->
-      <h2>Hours</h2>
-      <div class="hours">
-        <h3>Opening Hours</h3>
+      <h2 class="w3-caveat w3-xxxlarge">Hours</h2>
+      <div class="hours-container">
+        <div class="hours-item">
+        <h3 class="w3-caveat w3-xxlarge">Opening Hours</h3>
         <p>We are open Wednesday to Sunday from 5pm until late</p>
         <!--Calendar created on calendar.google.com-->
         <iframe id="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Pacific%2FAuckland&bgcolor=%23ffffff&src=OTdiMjIzMzI5YzZiZWU4OTYyMmMwYjFhYjk0MzUyZjc4NzA4YmFlOTgxYTY5MjgyNjc2YzQ1MTNjYzMyYmQ3MkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23A79B8E&color=%230B8043" style="border: solid 1px #777" width="800" height="600" title="Google calendar of Restaurant hours"></iframe>
       </div>
+
+      <div class="hours-item">
       <!--image-->
       <!--Reference: Millar, S. (2018). Close-up photography of green leafed plant [Photograph], Unsplash. https://unsplash.com/photos/close-up-photography-of-green-leafed-plant-xGLIM1n9hUY -->
-      <img class="image-koru" src="images/Koru-resized.jpg" alt="A Koru fern">
+      <img id="image-koru" src="images/Koru-resized.jpg" alt="A Koru fern">
+    </div>
+    </div>
     </main>
 
-    <!--footer-->
-    <footer class="allothers">
-      <div id="footer-address">
-        <h2>Address</h2>
-        <p>2 Mission Road</p>
-        <p>Kerikeri, Bay of Islands</p>
-        <p>09 401 4019</p>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-item">
+          <h2 class="w3-caveat w3-xxlarge">Address</h2>
+          <p class="w3-xlarge">2 Mission Road</p>
+          <p class="w3-xlarge">Kerikeri, Bay of Islands</p>
+          <p class="w3-xlarge">09 401 4019</p>
+          
+        </div>
+        <div class="footer-item">
+          <h2 class="w3-caveat w3-xxlarge">Hours</h2>
+          <p class="w3-xlarge">Wednesday to Sunday</p>
+          <p class="w3-xlarge">5pm until late</p>
+          <br>
+        </div>
+        
       </div>
-      <div id="footer-hours">
-        <h2>Hours</h2>
-        <p>Wednesday to Sunday</p>
-        <p>5pm until late</p>
-        <br>
+      <div id="privacy">
+        <a href="privacy.html" class="w3-large">Privacy statement</a>
       </div>
     </footer>
   </body>
