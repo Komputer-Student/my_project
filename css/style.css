@@ -22,8 +22,7 @@ body {
     background-position: center;
     background-size: cover;
     /*Reference- background-image- Wennington, J. (2014). Dish on white ceramic plate [Photograph], Unsplash. https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/background-big-originalfocus.jpg"); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background-big-originalfocus.jpg"); 
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -38,43 +37,43 @@ body {
   padding: 2.5%;
 }
 
-main {
+main, .not-home {
   flex-grow: 1;
 }
 
 .not-home {
   background-color: #383838;
-  flex-grow: 1;
 }
 
 footer {
-
   width: 100%;
   padding: 3em 2em;
 }
 
-.footer-container, .menu-container, .hours-container {
+.footer-container, .menu-container, .hours-container, .owners-container, .local-container {
   display: flex;
 }
 
-.footer-item, #menu-appetizers, #menu-mains, #menu-drinks, .hours-item {
-  text-align: center;
+.footer-item, #menu-appetizers, #menu-mains, #menu-drinks, .hours-item, #lisa-item, #bio-item, #local-bio-item, #leader-item {
   display: block;
 }
 
-/*menu page*/
-.menu-container {
-  margin: 5px;
+#bio-item, #local-bio-item {
+  margin-top: 5%;
 }
 
-#menu-appetizers, #menu-mains, #menu-drinks{
+.menu-container, .owners-container, .local-container, #menu-appetizers, #menu-mains, #menu-drinks {
+  margin: 2%;
+}
+
+#menu-appetizers, #menu-mains, #menu-drinks {
   border: 5px solid white;
-  margin: 5px;
 }
 
 dd {
   margin-bottom: 20px;
 }
+
 ul {
   list-style-type: none;
   margin-bottom: 5px;
@@ -91,44 +90,36 @@ ul {
   text-decoration: underline;
 }
 
-#form {
+#form, #calendar {
   border: 0;
 }
 
-  /*positioning the video*/
-  #video {
-    width: 75%;
-    margin:5%;
-    border: 0;
-  }
+/*positioning the video*/
+#video {
+  width: 75%;
+  margin:5%;
+  border: 0;
+}
 
-  /*positioning the map*/
-  #map {
-    width: 60%;
-    padding: 10px;
-    margin: 5%;
-    
-  }
+/*positioning the map*/
+#map, #calendar {
+  width: 60%;
+  padding: 10px;
+  margin: 5%;
+}
 
-  /*positioning the calendar*/
-  #calendar {
-    padding: 10px;
-    margin: 5%;
-    width: 60%;
-    border: 0;
-    overflow: hidden;
-  }
+/*positioning the calendar*/
+#calendar {
+  overflow: hidden;
+}
 
 /*medium and large screens*/
 @media only screen and (min-width: 601px) {
-.footer-container, 
-.menu-container,
-.hours-container {
+.footer-container, .menu-container, .hours-container, .owners-container, .local-container {
   flex-direction: row;  
 }
 
-.footer-item,
-.hours-item {
+.footer-item, .hours-item, #lisa-item, #bio-item, #local-bio-item, #leader-item {
   width: 50%;  
 }
 
@@ -138,63 +129,60 @@ ul {
 }
 
 /*positioning the images in the menu*/
-  .image-seafood,
-  .image-pavlova {
+.image-seafood, .image-pavlova, #owner-image {
     width: 90%;
     padding: 2%;
     height: auto;
   }
-
-
-
-#privacy {
-  
-  text-align: center;
-}
  
 a {
   text-decoration: none;
 }
 
-
 h1 {
   display: inline;
 }
 
-#image-koru {
+#image-koru, #leader-image {
   padding: 10px;
-  margin-left: 20%;
-  margin-top: 15%;
   width: 60%;
   height: auto;
 }
+#image-koru {
+  margin-left: 20%;
+  margin-top: 15%;
+}
 
+#leader-image {
+  margin-top: 2%;
+}
 
+#small-owner-image {
+  display:none;
+}
 }
 
 /*small screens*/
 @media only screen and (max-width: 600px) {
-  .footer-container, .menu-container {
+  .footer-container, .menu-container, .owners-container {
     flex-direction: column;
     line-height: 1.2;
   }
 
-  .footer-item, #menu-appetizers, #menu-mains, #menu-drinks {
+  .menu-container {
+    margin-right: 5%;
+  }
+
+  .footer-item, #menu-appetizers, #menu-mains, #menu-drinks, #bio-item, #small-lisa-item {
     width: 100%;
   }
 
-  #fern {
+  #fern, #lisa-item, #leader-image, .image-seafood, .image-pavlova, #image-koru {
     display: none;
   }
 
   #logo {
     width: 15%;
-  }
-
-  .image-seafood,
-  .image-pavlova,
-  #image-koru {
-    display: none;
   }
 
   #form,
