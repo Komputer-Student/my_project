@@ -15,10 +15,9 @@
     <script type="text/javascript" src="js/script.js"></script>
   </head>
 
-  <!--body-->
   <body>
-    <!--the banner-->
-    <header >
+    <header>
+      <!--Navigation bar for desktop display-->
       <div id="nav-desktop" class="w3-content">
         <div class="w3-top-left w3-bar w3-padding w3-xlarge w3-opacity-min">           
           <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Home</a>
@@ -27,85 +26,81 @@
           <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Contact</a>        
           <a href="hours.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Hours</a> 
           <a href="aboutus.html" class="w3-bar-item w3-button w3-hide-small w3-black w3-xlarge">About us</a>
-          <a href="./private/staff.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Staff</a>   
+          <a href="./private/staff.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Staff</a> 
+          <!--Hamburger-->    
           <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
         </div>
-    </div>
+      </div>
   
-    <div id="demo" class="w3-bar-block w3-dark-gray w3-hide w3-hide-large w3-hide-medium">
-      <a href="index.html" class="w3-bar-item w3-button">Home</a>
-      <a href="bookings.html" class="w3-bar-item w3-button">Bookings</a>
-      <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-      <a href="hours.html" class="w3-bar-item w3-button">Hours</a>
-      <a href="aboutus.html"  class="w3-bar-item w3-button">About us</a>
-      <a href="./private/staff.html" class="w3-bar-item w3-button">Staff</a>
-    </div>
+        <!--Navigation bar for mobile display-->
+        <div id="demo" class="w3-bar-block w3-dark-gray w3-hide w3-hide-large w3-hide-medium">
+          <a href="index.html" class="w3-bar-item w3-button">Home</a>
+          <a href="bookings.html" class="w3-bar-item w3-button">Bookings</a>
+          <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+          <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+          <a href="hours.html" class="w3-bar-item w3-button">Hours</a>
+          <a href="aboutus.html"  class="w3-bar-item w3-button">About us</a>
+          <a href="./private/staff.html" class="w3-bar-item w3-button">Staff</a>
+        </div>
 
-
-    <div id="header" class="w3-row-padding">
-
-      <div class="w3-container w3-quarter">
-        <!--Logo created on LOGO.com-->
-        <a href="index.html"><img id="logo" src="images/logo-no-background-white-resized.png" alt="The Haukai Restaurant logo"></a>
+      <!--header-->
+      <div id="header" class="w3-row-padding">
+        <div class="w3-container w3-quarter">
+          <!--Logo created on LOGO.com-->
+          <a href="index.html"><img id="logo" src="images/logo-no-background-white-resized.png" alt="The Haukai Restaurant logo"></a>
+        </div>
+        <div class="w3-container w3-half w3-center">
+          <!--website main heading-->
+          <h1 class="w3-caveat w3-jumbo">The Haukai Restaurant</h1>
+        </div>
+        <div class="w3-container w3-quarter w3-hide-small ">
+          <!--Reference: Silver fern- Wikimedia (2024). Silverfern.svg Multiple, Public domain, [Digital image], Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Silver_fern.svg-->
+          <img class="w3-border w3-border-white w3-round-xlarge w3-leftbar w3-topbar w3-rightbar w3-bottombar" id="fern" src="images/Silver_fern_white.png" alt="">
+        </div>
       </div>
-      <div class="w3-container w3-half w3-center">
-        <h1 class="w3-caveat w3-jumbo">The Haukai Restaurant</h1>
-      </div>
-      <div class="w3-container w3-quarter w3-hide-small ">
-        <!--Reference: Silver fern- Wikimedia (2024). Silverfern.svg Multiple, Public domain, [Digital image], Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Silver_fern.svg-->
-        <img class="w3-border w3-border-white w3-round-xlarge w3-leftbar w3-topbar w3-rightbar w3-bottombar" id="fern" src="images/Silver_fern_white.png" alt="">
-      </div>
-  </div>
     </header>
 
+    <!--main content of the page made with flexbox, style not the same as homepage-->
     <main class="not-home">
       <h2 class="w3-caveat w3-xxxlarge">About us</h2>
       <div class="owners-container">
-      <div id="lisa-item">
-      <!--image for desktop version of display-->
-      <!--Reference: Cagle, B. (2017). Tattooed woman with laptop [Photograph], Unsplash. https://unsplash.com/photos/woman-sitting-on-brown-wooden-chair-while-using-silver-laptop-computer-in-room-WHWYBmtn3_0-->
-      <img id="owner-image" src="images/Owner-resized.jpg" alt="Restaurant owner">
-    </div>
-    <div id="bio-item" class="w3-caveat w3-xlarge">
-      <!--paragraph about the owners-->
-      
-        <p>We are Scott and Lisa Smith.</p>
-        <p>We opened The Haukai Restaurant two years ago in Kerikeri, the Bay of Islands.</p>
-        <p>At the Restaurant we use produce from our garden and fish we catch.</p>
-        <p>Jack and Aroha are the friendly staff who help us run the Restaurant.</p>
-      
-    </div>
+        <div id="lisa-item">
+          <!--image for desktop version of display-->
+          <!--Reference: Cagle, B. (2017). Tattooed woman with laptop [Photograph], Unsplash. https://unsplash.com/photos/woman-sitting-on-brown-wooden-chair-while-using-silver-laptop-computer-in-room-WHWYBmtn3_0-->
+          <img id="owner-image" src="images/Owner-resized.jpg" alt="Restaurant owner">
+        </div>
+        <div id="bio-item" class="w3-caveat w3-xlarge">
+          <!--paragraph about the owners-->      
+          <p>We are Scott and Lisa Smith.</p>
+          <p>We opened The Haukai Restaurant two years ago in Kerikeri, the Bay of Islands.</p>
+          <p>At the Restaurant we use produce from our garden and fish we catch.</p>
+          <p>Jack and Aroha are the friendly staff who help us run the Restaurant.</p>      
+        </div>
+      </div>
 
-    </div>
-    <div id="small-lisa-item">
-    
-
+      <div id="small-lisa-item"> 
         <!--image for mobile version of display-->
         <!--Reference: Cagle, B. (2017). Tattooed woman with laptop [Photograph], Unsplash. https://unsplash.com/photos/woman-sitting-on-brown-wooden-chair-while-using-silver-laptop-computer-in-room-WHWYBmtn3_0-->
-        <img id="small-owner-image" src="images/Owner-resized-mobile.jpg" alt="Restaurant owner">
-        
-    </div>
+        <img id="small-owner-image" src="images/Owner-resized-mobile.jpg" alt="Restaurant owner">        
+      </div>
     
-
-    <div class="local-container">
-      <div id="local-bio-item" class="w3-caveat w3-xlarge">
-      <!--paragraph about relationship with local Maori-->
-      
-        <p>At The Haukai we offer M&amacr;ori and P&amacr;keha kai (food) options.</p>
-        <p>We provide a Te Ao M&amacr;ori experience.</p>
-        <p>We begin our meals with a karakia, a blessing.</p>
-        <p>When you order your food, Aroha and Jack explain why it is significant.</p>
-      
-    </div>
-    <div id="leader-item">
-      <!--image-->
-      <!--Reference: Fonseca, W. (2024). A man with a beard and tattoos standing next to a body of water [Photograph], Unsplash. https://images.unsplash.com/photo-1715313210517-2dcc505740f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D-->
-      <img id="leader-image" src="images/Māori-leader-resized.jpg" alt="The local Māori representative">
-    </div>
-    </div>
+      <div class="local-container">
+        <div id="local-bio-item" class="w3-caveat w3-xlarge">
+          <!--paragraph about relationship with local Maori-->      
+          <p>At The Haukai we offer M&amacr;ori and P&amacr;keha kai (food) options.</p>
+          <p>We provide a Te Ao M&amacr;ori experience.</p>
+          <p>We begin our meals with a karakia, a blessing.</p>
+          <p>When you order your food, Aroha and Jack explain why it is significant.</p>      
+        </div>
+        <div id="leader-item">
+          <!--image-->
+          <!--Reference: Fonseca, W. (2024). A man with a beard and tattoos standing next to a body of water [Photograph], Unsplash. https://images.unsplash.com/photo-1715313210517-2dcc505740f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D-->
+          <img id="leader-image" src="images/Māori-leader-resized.jpg" alt="The local Māori representative">
+        </div>
+      </div>
     </main>
 
+    <!--the page footer made with flexbox-->
     <footer>
       <div class="footer-container">
         <div class="footer-item">
@@ -113,19 +108,19 @@
           <p class="w3-xlarge">2 Mission Road</p>
           <p class="w3-xlarge">Kerikeri, Bay of Islands</p>
           <p class="w3-xlarge">09 401 4019</p>
-          
         </div>
         <div class="footer-item">
           <h2 class="w3-caveat w3-xxlarge">Hours</h2>
           <p class="w3-xlarge">Wednesday to Sunday</p>
           <p class="w3-xlarge">5pm until late</p>
           <br>
-        </div>
-        
+        </div>  
       </div>
       <div id="privacy">
         <a href="privacy.html" class="w3-large">Privacy statement</a>
       </div>
     </footer>
+
   </body>
+  
 </html>

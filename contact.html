@@ -15,10 +15,9 @@
     <script type="text/javascript" src="js/script.js"></script>
   </head>
 
-   <!--body-->
-   <body>
-    <!--the banner-->
-    <header >
+  <body>
+    <header>
+      <!--Navigation bar for desktop display-->
       <div id="nav-desktop" class="w3-content">
         <div class="w3-top-left w3-bar w3-padding w3-xlarge w3-opacity-min">           
           <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Home</a>
@@ -27,63 +26,66 @@
           <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-black w3-xlarge">Contact</a>        
           <a href="hours.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Hours</a> 
           <a href="aboutus.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">About us</a>
-          <a href="./private/staff.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Staff</a>   
+          <a href="./private/staff.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Staff</a> 
+          <!--Hamburger-->    
           <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
         </div>
-    </div>
+      </div>
   
-    <div id="demo" class="w3-bar-block w3-dark-gray w3-hide w3-hide-large w3-hide-medium">
-      <a href="index.html" class="w3-bar-item w3-button">Home</a>
-      <a href="bookings.html" class="w3-bar-item w3-button">Bookings</a>
-      <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-      <a href="hours.html" class="w3-bar-item w3-button">Hours</a>
-      <a href="aboutus.html"  class="w3-bar-item w3-button">About us</a>
-      <a href="./private/staff.html" class="w3-bar-item w3-button">Staff</a>
-    </div>
-    </div>
+        <!--Navigation bar for mobile display-->
+        <div id="demo" class="w3-bar-block w3-dark-gray w3-hide w3-hide-large w3-hide-medium">
+          <a href="index.html" class="w3-bar-item w3-button">Home</a>
+          <a href="bookings.html" class="w3-bar-item w3-button">Bookings</a>
+          <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+          <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+          <a href="hours.html" class="w3-bar-item w3-button">Hours</a>
+          <a href="aboutus.html"  class="w3-bar-item w3-button">About us</a>
+          <a href="./private/staff.html" class="w3-bar-item w3-button">Staff</a>
+        </div>
 
-    <div id="header" class="w3-row-padding">
+      <!--header-->
+      <div id="header" class="w3-row-padding">
+        <div class="w3-container w3-quarter">
+          <!--Logo created on LOGO.com-->
+          <a href="index.html"><img id="logo" src="images/logo-no-background-white-resized.png" alt="The Haukai Restaurant logo"></a>
+        </div>
+        <div class="w3-container w3-half w3-center">
+          <!--website main heading-->
+          <h1 class="w3-caveat w3-jumbo">The Haukai Restaurant</h1>
+        </div>
+        <div class="w3-container w3-quarter w3-hide-small ">
+          <!--Reference: Silver fern- Wikimedia (2024). Silverfern.svg Multiple, Public domain, [Digital image], Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Silver_fern.svg-->
+          <img class="w3-border w3-border-white w3-round-xlarge w3-leftbar w3-topbar w3-rightbar w3-bottombar" id="fern" src="images/Silver_fern_white.png" alt="">
+        </div>
+      </div>
+    </header>
 
-      <div class="w3-container w3-quarter">
-        <!--Logo created on LOGO.com-->
-        <a href="index.html"><img id="logo" src="images/logo-no-background-white-resized.png" alt="The Haukai Restaurant logo"></a>
-      </div>
-      <div class="w3-container w3-half w3-center">
-        <h1 class="w3-caveat w3-jumbo">The Haukai Restaurant</h1>
-      </div>
-      <div class="w3-container w3-quarter w3-hide-small ">
-        <!--Reference: Silver fern- Wikimedia (2024). Silverfern.svg Multiple, Public domain, [Digital image], Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Silver_fern.svg-->
-        <img class="w3-border w3-border-white w3-round-xlarge w3-leftbar w3-topbar w3-rightbar w3-bottombar" id="fern" src="images/Silver_fern_white.png" alt="">
-      </div>
-    </div>
-  </header>
-
-  <main class="not-home">
+    <!--main content of the page, style not the same as homepage-->
+    <main class="not-home">
       <!--paragraph with address details-->
       <h2 class="w3-caveat w3-xxxlarge">Contact us</h2>
       <div class="w3-cell-row">
         <div class="w3-container w3-cell">
-        <h3 class="w3-caveat w3-xxlarge">How to find us</h3>
-        <p>We are located in the beautiful Bay of Islands at&#x3a;</p>
-        <p>2 Mission Road</p>
-        <p>Kerikeri</p>
-        <p>Phone&#x3a; 09 401 4019</p>
-        <br>
-        <br>   
-        <!--Map of the restaurant location-->
-        <!--Reference https://www.google.com/maps/place/2+Mission+Road,+Kerikeri+0230/@-35.211453,173.962828,15z/data=!4m6!3m5!1s0x6d0bb7bb3f5605b3:0x161958941c0d7b38!8m2!3d-35.2114535!4d173.9628278!16s%2Fg%2F11sv045l_r?hl=en&entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D -->
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.7998756002403!2d173.96282779999999!3d-35.211453500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb7bb3f5605b3%3A0x161958941c0d7b38!2s2%20Mission%20Road%2C%20Kerikeri%200230!5e0!3m2!1sen!2snz!4v1723351121161!5m2!1sen!2snz" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google map"></iframe>
+          <h3 class="w3-caveat w3-xxlarge">How to find us</h3>
+          <p>We are located in the beautiful Bay of Islands at&#x3a;</p>
+          <p>2 Mission Road</p>
+          <p>Kerikeri</p>
+          <p>Phone&#x3a; 09 401 4019</p>
+          <br>
+          <br>   
+          <!--Map of the restaurant location-->
+          <!--Reference https://www.google.com/maps/place/2+Mission+Road,+Kerikeri+0230/@-35.211453,173.962828,15z/data=!4m6!3m5!1s0x6d0bb7bb3f5605b3:0x161958941c0d7b38!8m2!3d-35.2114535!4d173.9628278!16s%2Fg%2F11sv045l_r?hl=en&entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D -->
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.7998756002403!2d173.96282779999999!3d-35.211453500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb7bb3f5605b3%3A0x161958941c0d7b38!2s2%20Mission%20Road%2C%20Kerikeri%200230!5e0!3m2!1sen!2snz!4v1723351121161!5m2!1sen!2snz" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google map"></iframe>
+        </div>
+        <div class="w3-container w3-cell">    
+          <!--YouTube video of The Bay of Islands-->
+          <!--Reference: A Couple of Kiwis. (2019 March 2). The Bay of Islands, New Zealand- The most BEAUTIFUL place in the world, YouTube. https://www.youtube.com/watch?v=Gl0Kfp4x6lQ  -->
+          <iframe id="video" class="w3-hide-small w3-hide-medium" width="560" height="315" src="https://www.youtube.com/embed/Gl0Kfp4x6lQ?si=aUbtAVL_nyNlIXNE" title="YouTube video of the Bay of Islands" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
-      <div class="w3-container w3-cell">    
-      <!--YouTube video of The Bay of Islands-->
-      <!--Reference: A Couple of Kiwis. (2019 March 2). The Bay of Islands, New Zealand- The most BEAUTIFUL place in the world, YouTube. https://www.youtube.com/watch?v=Gl0Kfp4x6lQ  -->
-      <iframe id="video" class="w3-hide-small w3-hide-medium" width="560" height="315" src="https://www.youtube.com/embed/Gl0Kfp4x6lQ?si=aUbtAVL_nyNlIXNE" title="YouTube video of the Bay of Islands" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    </div>
     </main>
 
-    <!--footer-->
+    <!--the page footer made with flexbox-->
     <footer>
       <div class="footer-container">
         <div class="footer-item">
@@ -91,19 +93,19 @@
           <p class="w3-xlarge">2 Mission Road</p>
           <p class="w3-xlarge">Kerikeri, Bay of Islands</p>
           <p class="w3-xlarge">09 401 4019</p>
-          
         </div>
         <div class="footer-item">
           <h2 class="w3-caveat w3-xxlarge">Hours</h2>
           <p class="w3-xlarge">Wednesday to Sunday</p>
           <p class="w3-xlarge">5pm until late</p>
           <br>
-        </div>
-        
+        </div>  
       </div>
       <div id="privacy">
         <a href="privacy.html" class="w3-large">Privacy statement</a>
       </div>
     </footer>
+
   </body>
+  
 </html>

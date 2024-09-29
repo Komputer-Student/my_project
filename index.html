@@ -7,7 +7,6 @@
     <meta name="keywords" content="restaurants near me, restaurants bay of islands, restaurants kerikeri, traditional Maori food restaurant">
     <meta name="author" content="Jonathan Perris">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,12 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/script.js"></script>
   </head>
-
-  
+ 
   <body>
-<header>
-   
-    <div id="nav-desktop" class="w3-content">
+    <header>
+      <!--Navigation bar for desktop display-->
+      <div id="nav-desktop" class="w3-content">
         <div class="w3-top-left w3-bar w3-padding w3-xlarge w3-opacity-min">           
           <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-black w3-xlarge">Home</a>
           <a href="bookings.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Bookings</a>     
@@ -29,69 +27,70 @@
           <a href="hours.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Hours</a> 
           <a href="aboutus.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">About us</a>
           <a href="./private/staff.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Staff</a>   
+          <!--Hamburger-->  
           <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
         </div>
-    </div>
+      </div>
   
-    <div id="demo" class="w3-bar-block w3-dark-gray w3-hide w3-hide-large w3-hide-medium">
-      <a href="index.html" class="w3-bar-item w3-button">Home</a>
-      <a href="bookings.html" class="w3-bar-item w3-button">Bookings</a>
-      <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-      <a href="hours.html" class="w3-bar-item w3-button">Hours</a>
-      <a href="aboutus.html"  class="w3-bar-item w3-button">About us</a>
-      <a href="./private/staff.html" class="w3-bar-item w3-button">Staff</a>
-    </div>
+        <!--Navigation bar for mobile display-->  
+        <div id="demo" class="w3-bar-block w3-dark-gray w3-hide w3-hide-large w3-hide-medium">
+          <a href="index.html" class="w3-bar-item w3-button">Home</a>
+          <a href="bookings.html" class="w3-bar-item w3-button">Bookings</a>
+          <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+          <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+          <a href="hours.html" class="w3-bar-item w3-button">Hours</a>
+          <a href="aboutus.html"  class="w3-bar-item w3-button">About us</a>
+          <a href="./private/staff.html" class="w3-bar-item w3-button">Staff</a>
+        </div>
 
-
-    <div id="header" class="w3-row-padding">
-
-      <div class="w3-container w3-quarter">
-        <!--Logo created on LOGO.com-->
-        <a href="index.html"><img id="logo" src="images/logo-no-background-white-resized.png" alt="The Haukai Restaurant logo"></a>
+      <!--header-->
+      <div id="header" class="w3-row-padding">
+        <div class="w3-container w3-quarter">
+          <!--Logo created on LOGO.com-->
+          <a href="index.html"><img id="logo" src="images/logo-no-background-white-resized.png" alt="The Haukai Restaurant logo"></a>
+        </div>
+        <div class="w3-container w3-half w3-center">
+          <!--website main heading-->
+          <h1 class="w3-caveat w3-jumbo">The Haukai Restaurant</h1>
+        </div>
+        <div class="w3-container w3-quarter w3-hide-small ">
+          <!--Reference: Silver fern- Wikimedia (2024). Silverfern.svg Multiple, Public domain, [Digital image], Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Silver_fern.svg-->
+          <img class="w3-border w3-border-white w3-round-xlarge w3-leftbar w3-topbar w3-rightbar w3-bottombar" id="fern" src="images/Silver_fern_white.png" alt="">
+        </div>
       </div>
-      <div class="w3-container w3-half w3-center">
-        <h1 class="w3-caveat w3-jumbo">The Haukai Restaurant</h1>
-      </div>
-      <div class="w3-container w3-quarter w3-hide-small ">
-        <!--Reference: Silver fern- Wikimedia (2024). Silverfern.svg Multiple, Public domain, [Digital image], Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Silver_fern.svg-->
-        <img class="w3-border w3-border-white w3-round-xlarge w3-leftbar w3-topbar w3-rightbar w3-bottombar" id="fern" src="images/Silver_fern_white.png" alt="">
-      </div>
-  </div>
-  </header>
+    </header>
+    
     <main>
-        <!--The welcome message-->
-        <div class="w3-display-middle w3-center">
+      <!--The welcome message-->
+      <div class="w3-display-middle w3-center">
         <h2 class="w3-hide-small w3-caveat w3-xxxlarge">Haere mai</h2>
         <h2 class="w3-hide-small w3-caveat w3-xxxlarge">Welcome to an authentic cultural experience</h2>
-        
         <!--link to bookings page-->
-        
         <a href="bookings.html" class="w3-button w3-white w3-xxlarge w3-round-large">Book now</a>
-    </div>
-      </main>
+      </div>
+    </main>
 
+    <!--the page footer made with flexbox-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-item">
+          <h2 class="w3-caveat w3-xxlarge">Address</h2>
+          <p class="w3-xlarge">2 Mission Road</p>
+          <p class="w3-xlarge">Kerikeri, Bay of Islands</p>
+          <p class="w3-xlarge">09 401 4019</p>
+        </div>
+        <div class="footer-item">
+          <h2 class="w3-caveat w3-xxlarge">Hours</h2>
+          <p class="w3-xlarge">Wednesday to Sunday</p>
+          <p class="w3-xlarge">5pm until late</p>
+          <br>
+        </div>  
+      </div>
+      <div id="privacy">
+        <a href="privacy.html" class="w3-large">Privacy statement</a>
+      </div>
+    </footer>
 
-
-<footer>
-  <div class="footer-container">
-    <div class="footer-item">
-      <h2 class="w3-caveat w3-xxlarge">Address</h2>
-      <p class="w3-xlarge">2 Mission Road</p>
-      <p class="w3-xlarge">Kerikeri, Bay of Islands</p>
-      <p class="w3-xlarge">09 401 4019</p>
-      
-    </div>
-    <div class="footer-item">
-      <h2 class="w3-caveat w3-xxlarge">Hours</h2>
-      <p class="w3-xlarge">Wednesday to Sunday</p>
-      <p class="w3-xlarge">5pm until late</p>
-      <br>
-    </div>
-    
-  </div>
-  <div id="privacy">
-    <a href="privacy.html" class="w3-large">Privacy statement</a>
-  </div>
-</footer>
-</body>
+  </body>
+  
+</html>

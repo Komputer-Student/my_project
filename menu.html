@@ -15,10 +15,9 @@
     <script type="text/javascript" src="js/script.js"></script>
   </head>
 
-   <!--body-->
-   <body>
-    <!--the banner-->
-    <header >
+  <body>
+    <header>
+      <!--Navigation bar for desktop display-->
       <div id="nav-desktop" class="w3-content">
         <div class="w3-top-left w3-bar w3-padding w3-xlarge w3-opacity-min">           
           <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Home</a>
@@ -27,39 +26,41 @@
           <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Contact</a>        
           <a href="hours.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Hours</a> 
           <a href="aboutus.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">About us</a>
-          <a href="./private/staff.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Staff</a>   
+          <a href="./private/staff.html" class="w3-bar-item w3-button w3-hide-small w3-xlarge">Staff</a> 
+          <!--Hamburger-->    
           <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
         </div>
-    </div>
+      </div>
   
-    <div id="demo" class="w3-bar-block w3-dark-gray w3-hide w3-hide-large w3-hide-medium">
-      <a href="index.html" class="w3-bar-item w3-button">Home</a>
-      <a href="bookings.html" class="w3-bar-item w3-button">Bookings</a>
-      <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-      <a href="hours.html" class="w3-bar-item w3-button">Hours</a>
-      <a href="aboutus.html"  class="w3-bar-item w3-button">About us</a>
-      <a href="./private/staff.html" class="w3-bar-item w3-button">Staff</a>
-    </div>
+        <!--Navigation bar for mobile display-->
+        <div id="demo" class="w3-bar-block w3-dark-gray w3-hide w3-hide-large w3-hide-medium">
+          <a href="index.html" class="w3-bar-item w3-button">Home</a>
+          <a href="bookings.html" class="w3-bar-item w3-button">Bookings</a>
+          <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+          <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+          <a href="hours.html" class="w3-bar-item w3-button">Hours</a>
+          <a href="aboutus.html"  class="w3-bar-item w3-button">About us</a>
+          <a href="./private/staff.html" class="w3-bar-item w3-button">Staff</a>
+        </div>
     
-
-    <div id="header" class="w3-row-padding">
-
-      <div class="w3-container w3-quarter">
-        <!--Logo created on LOGO.com-->
-        <a href="index.html"><img id="logo" src="images/logo-no-background-white-resized.png" alt="The Haukai Restaurant logo"></a>
+      <!--header-->
+      <div id="header" class="w3-row-padding">
+        <div class="w3-container w3-quarter">
+          <!--Logo created on LOGO.com-->
+          <a href="index.html"><img id="logo" src="images/logo-no-background-white-resized.png" alt="The Haukai Restaurant logo"></a>
+        </div>
+        <div class="w3-container w3-half w3-center">
+          <!--website main heading-->
+          <h1 class="w3-caveat w3-jumbo">The Haukai Restaurant</h1>
+        </div>
+        <div class="w3-container w3-quarter w3-hide-small ">
+          <!--Reference: Silver fern- Wikimedia (2024). Silverfern.svg Multiple, Public domain, [Digital image], Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Silver_fern.svg-->
+          <img class="w3-border w3-border-white w3-round-xlarge w3-leftbar w3-topbar w3-rightbar w3-bottombar" id="fern" src="images/Silver_fern_white.png" alt="">
+        </div>
       </div>
-      <div class="w3-container w3-half w3-center">
-        <h1 class="w3-caveat w3-jumbo">The Haukai Restaurant</h1>
-      </div>
-      <div class="w3-container w3-quarter w3-hide-small ">
-        <!--Reference: Silver fern- Wikimedia (2024). Silverfern.svg Multiple, Public domain, [Digital image], Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Silver_fern.svg-->
-        <img class="w3-border w3-border-white w3-round-xlarge w3-leftbar w3-topbar w3-rightbar w3-bottombar" id="fern" src="images/Silver_fern_white.png" alt="">
-      </div>
-    </div>
-  </header>
+    </header>
 
-    <!--the restaurant menu-->
+    <!--the restaurant menu made with flexbox, style not the same as homepage-->
     <main class="not-home">
       <h2 class="w3-caveat w3-xxxlarge">Menu</h2>
       <div class="menu-container">
@@ -172,7 +173,7 @@
       </div>
     </main>
 
-    <!--footer-->
+    <!--the page footer made with flexbox-->
     <footer>
       <div class="footer-container">
         <div class="footer-item">
@@ -180,19 +181,19 @@
           <p class="w3-xlarge">2 Mission Road</p>
           <p class="w3-xlarge">Kerikeri, Bay of Islands</p>
           <p class="w3-xlarge">09 401 4019</p>
-          
         </div>
         <div class="footer-item">
           <h2 class="w3-caveat w3-xxlarge">Hours</h2>
           <p class="w3-xlarge">Wednesday to Sunday</p>
           <p class="w3-xlarge">5pm until late</p>
           <br>
-        </div>
-        
+        </div>  
       </div>
       <div id="privacy">
         <a href="privacy.html" class="w3-large">Privacy statement</a>
       </div>
     </footer>
+
   </body>
+  
 </html>

@@ -1,3 +1,4 @@
+/*universal styles for the website*/
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@
   text-align: center;
 }
 
+/*specifying w3 font*/
 .w3-caveat {
   font-family: "Caveat", cursive;
 }
@@ -17,6 +19,7 @@ h1 {
   font-weight: 100;
 }
 
+/*styles for the body of the website- the body is flexboxed*/
 body {
     background-repeat: no-repeat;
     background-position: center;
@@ -29,6 +32,7 @@ body {
     min-height: 100vh;
   }
 
+/*styles for the logo and fern in the header*/ 
 #logo, #fern {
   width: 30%;
   height: auto;
@@ -37,19 +41,23 @@ body {
   padding: 2.5%;
 }
 
+/*flexboxing the main part of each page*/
 main, .not-home {
   flex-grow: 1;
 }
 
+/*the background colour for all of the main sections except the homepage*/
 .not-home {
   background-color: #383838;
 }
 
+/*styles for the footer*/
 footer {
   width: 100%;
   padding: 3em 2em;
 }
 
+/*flexboxing elements*/
 .footer-container, .menu-container, .hours-container, .owners-container, .local-container {
   display: flex;
 }
@@ -58,6 +66,7 @@ footer {
   display: block;
 }
 
+/*adding margins*/
 #bio-item, #local-bio-item {
   margin-top: 5%;
 }
@@ -66,14 +75,20 @@ footer {
   margin: 2%;
 }
 
-#menu-appetizers, #menu-mains, #menu-drinks {
-  border: 5px solid white;
-}
-
 dd {
   margin-bottom: 20px;
 }
 
+/*styling borders*/
+#menu-appetizers, #menu-mains, #menu-drinks {
+  border: 5px solid white;
+}
+
+#form, #calendar {
+  border: 0;
+}
+
+/*list style and layout*/
 ul {
   list-style-type: none;
   margin-bottom: 5px;
@@ -90,110 +105,113 @@ ul {
   text-decoration: underline;
 }
 
-#form, #calendar {
-  border: 0;
-}
-
-/*positioning the video*/
+/*positioning, styling and sizing elements*/
 #video {
   width: 75%;
   margin:5%;
   border: 0;
 }
 
-/*positioning the map*/
 #map, #calendar {
   width: 60%;
   padding: 10px;
   margin: 5%;
 }
 
-/*positioning the calendar*/
+/*preventing horizontal scrolling*/
 #calendar {
   overflow: hidden;
 }
 
 /*medium and large screens*/
 @media only screen and (min-width: 601px) {
-.footer-container, .menu-container, .hours-container, .owners-container, .local-container {
-  flex-direction: row;  
-}
+  /*flexboxing elements in a row*/
+  .footer-container, .menu-container, .hours-container, .owners-container, .local-container {
+    flex-direction: row;  
+  }
 
-.footer-item, .hours-item, #lisa-item, #bio-item, #local-bio-item, #leader-item {
-  width: 50%;  
-}
+  /*width of flexboxed items*/
+  .footer-item, .hours-item, #lisa-item, #bio-item, #local-bio-item, #leader-item {
+    width: 50%;  
+  }
 
-/*menu page*/
-#menu-appetizers, #menu-mains, #menu-drinks{
-  width: 33%;
-}
+  /*width of menu page flexboxed items*/
+  #menu-appetizers, #menu-mains, #menu-drinks{
+    width: 33%;
+  }
 
-/*positioning the images in the menu*/
-.image-seafood, .image-pavlova, #owner-image {
-    width: 90%;
-    padding: 2%;
+  /*positioning the images in the menu*/
+  .image-seafood, .image-pavlova, #owner-image {
+      width: 90%;
+      padding: 2%;
+      height: auto;
+    }
+ 
+  /*removing the underline from the link*/  
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    display: inline;
+  }
+
+  /*positioning and sizing images*/
+  #image-koru, #leader-image {
+    padding: 10px;
+    width: 60%;
     height: auto;
   }
- 
-a {
-  text-decoration: none;
-}
 
-h1 {
-  display: inline;
-}
+  #image-koru {
+    margin-left: 20%;
+    margin-top: 15%;
+  }
 
-#image-koru, #leader-image {
-  padding: 10px;
-  width: 60%;
-  height: auto;
-}
-#image-koru {
-  margin-left: 20%;
-  margin-top: 15%;
-}
+  #leader-image {
+    margin-top: 2%;
+  }
 
-#leader-image {
-  margin-top: 2%;
-}
-
-#small-owner-image {
-  display:none;
-}
+  /*preventing the image from being displayed*/
+  #small-owner-image {
+    display:none;
+  }
 }
 
 /*small screens*/
 @media only screen and (max-width: 600px) {
+  /*flexboxing elements in a column*/
   .footer-container, .menu-container, .owners-container {
     flex-direction: column;
     line-height: 1.2;
   }
 
+  /*positioning the menu container element*/
   .menu-container {
     margin-right: 5%;
   }
 
+  /*width of flexboxed items*/
   .footer-item, #menu-appetizers, #menu-mains, #menu-drinks, #bio-item, #small-lisa-item {
     width: 100%;
   }
 
+  /*preventing images from being displayed*/
   #fern, #lisa-item, #leader-image, .image-seafood, .image-pavlova, #image-koru {
     display: none;
   }
 
+  /*width of logo*/
   #logo {
     width: 15%;
   }
 
-  #form,
-  #map,
-  #calendar {
+  /*positioning, styling and sizing elements*/
+  #form, #map, #calendar {
     padding: 10px;
     margin: 1%;
     width: 100%;
     border: 0;
   }
-
-
 }
 
